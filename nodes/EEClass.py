@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+# -*- encoding: UTF-8 -*-
+"""
+Created on Mon, Apr  3 2017 15:11:09
+
+@author: Elmira
+"""
+
+
 import animations.embarassed_seated_pose
 import animations.scratchHead_seated_pose
 import animations.IdontKnow_seated_pose
@@ -66,8 +75,8 @@ class EYEEMOTIONS:
 		self.proxy.fadeRGB("half_down", 0x00FA0000, 5)
 
 		# Turn off the emotion
-		self.proxy.fadeRGB("FaceLeds", 0x00000000, 5)
-		self.proxy.fadeRGB("ChestLeds", 0x00000000, 5)
+		self.proxy.fadeRGB("FaceLeds", 0x00000000, 1)
+		self.proxy.fadeRGB("ChestLeds", 0x00000000, 1)
 		time.sleep(1)
 
 
@@ -184,9 +193,31 @@ class EYEEMOTIONS:
 		self.proxy.fadeRGB("fear", 0x00000046, 0.3)
 
 		# turn off the emotion 
-		self.proxy.post.fadeRGB("FaceLeds", 0x00000000, 1)
-		self.proxy.fadeRGB("ChestLeds", 0x00000000, 1)
+		self.proxy.post.fadeRGB("FaceLeds", 0x00000000, 4)
+		self.proxy.fadeRGB("ChestLeds", 0x00000000, 4)
 		time.sleep(1)
+
+
+
+	def emotion_listen(self, dur=1):
+
+		section1 = ["FaceLed0", "FaceLed1", "FaceLed2", "FaceLed3" ]
+		section2 = ["FaceLed4", "FaceLed5", "FaceLed6", "FaceLed7", "ChestLeds", "FeetLeds", "EarLeds"]
+		self.proxy.createGroup("half_up", section1)
+		self.proxy.createGroup("half_down", section2)
+
+		# Initiate the emotion
+		self.proxy.fadeRGB("half_up", 0, 0, 0, 0.1)
+		self.proxy.fadeRGB("half_down", 0x00FA0000, 0.1)
+		self.proxy.fadeRGB("half_down", 0x00640000, 4)
+		self.proxy.fadeRGB("half_down", 0x00FA0000, 4)
+
+		# Turn off the emotion
+		self.proxy.fadeRGB("FaceLeds", 0x00000000, 0.2)
+		self.proxy.fadeRGB("ChestLeds", 0x00000000, 0.2)
+		#time.sleep(1)
+
+
 
 	def turn_on_eye(self):
 		section1 = ["FaceLeds", "ChestLeds" ]
@@ -232,3 +263,6 @@ class EYEEMOTIONS:
 
 		if emotional_state == "fear":
 			self.emotion_fear()
+
+		if emotional_state == "listen":
+			self.emotion_listen()

@@ -1,76 +1,247 @@
-[0, 1]		2=WordNum 1=LineNum 2=L1 2=B1 			1=NextLine \\rspd=50\\ Fox \\pau=500\\ story \\pau=500\\
-[2, 3]		3=WordNum 1=LineNum 3=L1 2=B1 			1=NextLine \\rspd=50\\ A \\pau=600\\ red=RTag brown=WTag \\pau=600\\ Fox \\pau=500\\
-[4, 5] 		3=WordNum 2=LineNum 2=L1 2=B1 5=L2 5=B2 	1=NextLine \\rspd=50\\ in \\pau=500\\ blue=RTag green=WTag \\pau=500\\ socks \\pau=500\\
-[6, 7] 		5=WordNum 3=LineNum 4=L1 4=B1 3=L2 3=B2 2=L3 2=B3 	1=NextLine \\rspd=50\\ doing \\pau=500\\ tricks \\pau=500\\ with \\pau=500\\ 		2=NextLine \\rspd=50\\ orange \\pau=500\\ clocks=RTag rocks=WTag \\pau=500\\ 		2=NextLine \\rspd=50\\ hell \\pau=500\\ no \\pau=500\\ 
-[8, 9] 		2=WordNum 1=LineNum 2=L1 2=B1 			1=NextLine \\rspd=50\\ The \\pau=500\\ end. \\pau=500\\
-[10, 11] 	5=WordNum 1=LineNum 5=L1 5=B1 			1=NextLine \\rspd=50\\ The \\pau=500\\ cat \\pau=500\\ in \\pau=500\\ the \\pau=500\\ hat \\pau=500\\
-[12, 13] 	6=WordNum 4=LineNum 5=L1 5=B1 6=L2 6=B2 6=L3 6=B3 6=L4 6=B4	 1=NextLine \\rspd=50\\ The \\pau=500\\ sun=RTag moon=WTag \\pau=500\\ did \\pau=500\\ not \\pau=500\\ shine. 	2=NextLine \\pau=500\\ It \\pau=500\\ was \\pau=500\\ too \\pau=500\\ wet \\pau=500\\ to \\pau=500\\ play=RTag sleep=WTag \\pau=500\\ =NextLine So \\pau=500\\ we \\pau=500\\ sat \\pau=500\\ in \\pau=500\\ the \\pau=500\\ house=RTag car=WTag \\pau=500\\ =NextLine All \\pau=500\\ the \\pau=500\\ cold, \\pau=500\\ cold, \\pau=500\\ wet \\pau=500\\ day. =NextLine
-
-[50, 51]	4=WordNum 2=LineNum 2=L1 2=B1 2=L2 2=B2		1=NextLine \\rspd=50\\ North, \\pau=500\\ South, \\pau=500\\ 	2=NextLine \\rspd=50\\ East, \\pau=500\\ West \\pau=500\\
-[52, 53]	4=WordNum 2=LineNum 11=L1 11=B1 9=L2 9=B2	1=NextLine \\rspd=50\\ Once \\pau=500\\ there \\pau=500\\ was \\pau=500\\ a \\pau=500\\ little \\pau=500\\ bird \\pau=500\\ all \\pau=500\\ tucked \\pau=500\\ into \\pau=500\\ her \\pau=500\\ nest \\pau=500\\	2=NextLine \\rspd=50\\ it \\pau=500\\ was \\pau=500\\ almost \\pau=500\\ time \\pau=500\\ for \\pau=500\\ her \\pau=500\\ to \\pau=500\\ fly \\pau=500\\ away \\pau=500\\
-[54, 55]	4=WordNum 2=LineNum 8=L1 8=B1 8=L2 8=B2		1=NextLine \\rspd=50\\ Her \\pau=500\\ mother \\pau=500\\ taught \\pau=500\\ her \\pau=500\\ to \\pau=500\\ ride \\pau=500\\ the \\pau=500\\ wind 		2=NextLine \\pau=500\\ and \\pau=500\\ to \\pau=500\\ fly \\pau=500\\ above \\pau=500\\ and \\pau=500\\ below \\pau=500\\ the \\pau=500\\ storms.
-[56, 57]	9=WordNum 1=LineNum 9=L1 9=B1			1=NextLine \\rspd=50\\ and \\pau=500\\ to \\pau=500\\ glide \\pau=500\\ on \\pau=500\\ the \\pau=500\\ strength \\pau=500\\ of \\pau=500\\ the \\pau=500\\ wind. 
-[58, 59]	5=WordNum 3=LineNum 6=L1 6=B1 7=L2 7=B2 7=L3 7=B3	1=NextLine \\rspd=50\\ And \\pau=500\\ then \\pau=500\\ they \\pau=500\\ would \\pau=500\\ fly \\pau=500\\ home		2=NextLine \\rspd=50\\ to \\pau=500\\ their \\pau=500\\ nest \\pau=500\\ in \\pau=500\\ the \\pau=500\\ sycamore \\pau=500\\ tree 		3=NextLine \\rspd=50\\ and \\pau=500\\ she \\pau=500\\ would \\pau=500\\ sing \\pau=500\\ her \\pau=500\\ a \\pau=500\\ song.
-[60, 61]	5=WordNum 3=LineNum 6=L1 6=B1 7=L2 7=B2 5=L3 5=B3	1=NextLine \\rspd=50\\ And \\pau=500\\ the \\pau=500\\ little \\pau=500\\ bird \\pau=500\\ would \\pau=500\\ ask 	2=NextLine \\rspd=50\\ When \\pau=500\\ I \\pau=500\\ fly \\pau=500\\ away, \\pau=500\\ which \\pau=500\\ is \\pau=500\\ best,			3=NextLine \\rspd=50\\ North, \\pau=500\\ South, \\pau=500\\ East, \\pau=500\\ or \\pau=500\\ West?
-[62, 63]	4=WordNum 2=LineNum 8=L1 8=B1 9=L2 9=B2		1=NextLine \\rspd=50\\ Her \\pau=500\\ mother \\pau=500\\ curved \\pau=500\\ her \\pau=500\\ a \\pau=500\\ head \\pau=500\\ under \\pau=500\\ her \\pau=500\\ wing		2=NextLine \\rspd=50\\ and \\pau=500\\ put \\pau=500\\ her \\pau=500\\ other \\pau=500\\ wing \\pau=500\\ over \\pau=500\\ her \\pau=500\\ little \\pau=500\\ bird.
-[64, 65]	4=WordNum 2=LineNum 7=L1 7=B1 6=L2 6=B2		1=NextLine \\rspd=50\\ As \\pau=500\\ the \\pau=500\\ hush \\pau=500\\ of \\pau=500\\ the \\pau=500\\ evening \\pau=500\\ fell,			2=NextLine \\rspd=50\\ the \\pau=500\\ crickets \\pau=500\\ sang \\pau=500\\ their \\pau=500\\ cricket \\pau=500\\ song.
-[66, 67]	6=WordNum 4=LineNum 5=L1 5=B1 6=L2 6=B2 6=L3 6=B3 6=L4 6=B4	1=NextLine \\rspd=50\\ And \\pau=500\\ the \\pau=500\\ little \\pau=500\\ bird \\pau=500\\ dreamed		2=NextLine \\rspd=50\\ from \\pau=500\\ the \\pau=500\\ warmth \\pau=500\\ of \\pau=500\\ the \\pau=500\\ nest			3=NextLine \\rspd=50\\ of \\pau=500\\ the \\pau=500\\ North \\pau=500\\ and \\pau=500\\ the \\pau=500\\ South		4=NextLine \\rspd=50\\ and \\pau=500\\ the \\pau=500\\ East \\pau=500\\ and \\pau=500\\ the \\pau=500\\ West.
-[68, 69]	9=WordNum 1=LineNum 9=L1 9=B1			1=NextLine \\rspd=50\\ In \\pau=500\\ the \\pau=500\\ bright \\pau=500\\ new \\pau=500\\ light \\pau=500\\ of \\pau=500\\ the \\pau=500\\ rising \\pau=500\\ sun
-[70, 71]	7=WordNum 1=LineNum 7=L1 7=B1			1=NextLine \\rspd=50\\ She \\pau=500\\ stretched \\pau=500\\ her \\pau=500\\ little \\pau=500\\ wings \\pau=500\\ and \\pau=500\\ flew.
-[72, 73]	4=WordNum 2=LineNum 9=L1 9=B1 7=L2 7=B2		1=NextLine \\rspd=50\\ And \\pau=500\\ she \\pau=500\\ flew \\pau=500\\ on \\pau=500\\ the \\pau=500\\ wind \\pau=500\\ to \\pau=500\\ the \\pau=500\\ north,		2=NextLine \\rspd=50\\ to \\pau=500\\ a \\pau=500\\ land \\pau=500\\ of \\pau=500\\ ice \\pau=500\\ and \\pau=500\\ snow,
-[74, 75]	4=WordNum 1=LineNum 4=L1 4=B1			1=NextLine \\rspd=50\\ Where \\pau=500\\ everything \\pau=500\\ was \\pau=500\\ white.
-[76, 77]	4=WordNum 2=LineNum 9=L1 9=B1 6=L2 6=B2		1=NextLine \\rspd=50\\ But \\pau=500\\ it \\pau=500\\ was \\pau=500\\ too \\pau=500\\ cold \\pau=500\\ for \\pau=500\\ the \\pau=500\\ little \\pau=500\\ bird		2=NextLine \\rspd=50\\ to \\pau=500\\ rest \\pau=500\\ or \\pau=500\\ build \\pau=500\\ her \\pau=500\\ nest.
-[78, 79]	5=WordNum 3=LineNum 5=L1 5=B1 3=L2 3=B2 3=L3 3=B3	1=NextLine \\rspd=50\\ And \\pau=500\\ so \\pau=500\\ she \\pau=500\\ flew \\pau=500\\ around 		2=NextLine \\rspd=50\\ the \\pau=500\\ North \\pau=500\\ Pole 		3=NextLine \\rspd=50\\ and \\pau=500\\ headed \\pau=500\\ south.
-[80, 81]	10=WordNum 1=LineNum 10=L1 10=B1		1=NextLine \\rspd=50\\ Til \\pau=500\\ the \\pau=500\\ sea \\pau=500\\ was \\pau=500\\ blue, \\pau=500\\ and \\pau=500\\ the \\pau=500\\ trees \\pau=500\\ were \\pau=500\\ green.
-[82, 83]	7=WordNum 1=LineNum 7=L1 7=B1			1=NextLine \\rspd=50\\ and \\pau=500\\ the \\pau=500\\ thickets \\pau=500\\ were \\pau=500\\ full \\pau=500\\ of \\pau=500\\ flowers.
-[84, 85]	4=WordNum 2=LineNum 10=L1 10=B1 10=L2 10=B2	1=NextLine \\rspd=50\\ But \\pau=500\\ it \\pau=500\\ was \\pau=500\\ too \\pau=500\\ hot \\pau=500\\ there \\pau=500\\ to \\pau=500\\ build \\pau=500\\ a \\pau=500\\ nest,		2=NextLine \\rspd=50\\ so \\pau=500\\ the \\pau=500\\ little \\pau=500\\ bird \\pau=500\\ rested \\pau=500\\ and \\pau=500\\ then \\pau=500\\ she \\pau=500\\ headed \\pau=500\\ West.
-[86, 87]	6=WordNum 1=LineNum 6=L1 6=B1			1=NextLine \\rspd=50\\ Over \\pau=500\\ mountains \\pau=500\\ and \\pau=500\\ rivers \\pau=500\\ and \\pau=500\\ plains
-[88, 89]	9=WordNum 1=LineNum 9=L1 9=B1			1=NextLine \\rspd=50\\ to \\pau=500\\ where \\pau=500\\ the \\pau=500\\ red \\pau=500\\ sun \\pau=500\\ sank \\pau=500\\ into \\pau=500\\ the \\pau=500\\ sea.
-[90, 91]	6=WordNum 4=LineNum 6=L1 6=B1 6=L2 6=B2 3=L3 3=B3 4=L4 4=B4	1=NextLine \\rspd=50\\ She \\pau=500\\ had \\pau=500\\ flown \\pau=500\\ to \\pau=500\\ the \\pau=500\\ North		2=NextLine \\rspd=50\\ and \\pau=500\\ the \\pau=500\\ South \\pau=500\\ and \\pau=500\\ the \\pau=500\\ West.		3=NextLine \\rspd=50\\ But \\pau=500\\ which \\pau=500\\ direction		4=NextLine \\rspd=50\\ did \\pau=500\\ she \\pau=500\\ like \\pau=500\\ best?
-[92, 93]	4=WordNum 2=LineNum 7=L1 7=B1 6=L2 6=B2		1=NextLine \\rspd=50\\ She \\pau=500\\ sat \\pau=500\\ on \\pau=500\\ a \\pau=500\\ rock \\pau=500\\ by \\pau=500\\ the \\pau=500\\ edge \\pau=500\\ of \\pau=500\\ the \\pau=500\\ sea.		2=NextLine \\rspd=50\\ And \\pau=500\\ she \\pau=500\\ thought \\pau=500\\ of \\pau=500\\ her \\pau=500\\ home \\pau=500\\ in \\pau=500\\ the \\pau=500\\ synamore \\pau=500\\ tree.
-[94, 95]	5=WordNum 3=LineNum 6=L1 6=B1 7=L2 7=B2 5=L3 5=B3	1=NextLine \\rspd=50\\ She \\pau=500\\ had \\pau=500\\ flown \\pau=500\\ to \\pau=500\\ the \\pau=500\\ North		2=NextLine \\rspd=50\\ and \\pau=500\\ the \\pau=500\\ south \\pau=500\\ and \\pau=500\\ the \\pau=500\\ West		3=NextLine \\rspd=50\\ But \\pau=500\\ the \\pau=500\\ East \\pau=500\\ was \\pau=500\\ home.
-[96, 97]	5=WordNum 1=LineNum 5=L1 5=B1			1=NextLine \\rspd=50\\ So \\pau=500\\ she \\pau=500\\ stretched \\pau=500\\ her \\pau=500\\ wings
-[98, 99]	6=WordNum 1=LineNum 6=L1 6=B1			1=NextLine \\rspd=50\\ And \\pau=500\\ flew \\pau=500\\ into \\pau=500\\ the \\pau=500\\ rising \\pau=500\\ sun.
-[100, 101]	6=WordNum 5=LineNum 4=L1 4=B1 4=L2 4=B2 4=L3 4=B3 2=L4 2=B4 2=L5 2=B5		1=NextLine \\rspd=50\\ Over \\pau=500\\ the \\pau=500\\ high \\pau=500\\ mountains.		2=NextLine \\rspd=50\\ over \\pau=500\\ the \\pau=500\\ deep \\pau=500\\ canyons,		3=NextLine \\rspd=50\\ over \\pau=500\\ the \\pau=500\\ great \\pau=500\\ forests		4=NextLine \\rspd=50\\ and \\pau=500\\ plains		5=NextLine \\rspd=50\\ she \\pau=500\\ flew.
-[102, 103]	13=WordNum 1=LineNum 13=L1 13=B1		1=NextLine \\rspd=50\\ Til \\pau=500\\ she \\pau=500\\ came \\pau=500\\ to \\pau=500\\ where \\pau=500\\ the \\pau=500\\ land \\pau=500\\ was \\pau=500\\ soft \\pau=500\\ and \\pau=500\\ green \\pau=500\\ with \\pau=500\\ rain,
-[104, 105]	6=WordNum 1=LineNum 6=L1 6=B1			1=NextLine \\rspd=50\\ and \\pau=500\\ the \\pau=500\\ sycamore \\pau=500\\ trees \\pau=500\\ grew \\pau=500\\ tall.
-[106, 107]	6=WordNum 4=LineNum 3=L1 3=B1 5=L2 5=B2 5=L3 5=B3 3=L4 3=B4	1=NextLine \\rspd=50\\ In \\pau=500\\ the \\pau=500\\ spring		2=NextLine \\rspd=50\\ when \\pau=500\\ the \\pau=500\\ wild \\pau=500\\ birds \\pau=500\\ sing		3=NextLine \\rspd=50\\ in \\pau=500\\ the \\pau=500\\ wild \\pau=500\\ green \\pau=500\\ forests	4=NextLine \\rspd=50\\ of \\pau=500\\ the \\pau=500\\ East 
-[108, 109]	6=WordNum 5=LineNum 7=L1 7=B1 4=L2 4=B2 8=L3 8=B3 4=L4 4=B4 5=L5 5=B5		1=NextLine \\rspd=50\\ the \\pau=500\\ little \\pau=500\\ bird \\pau=500\\ a \\pau=500\\ big \\pau=500\\ bird \\pau=500\\ now		2=NextLine \\rspd=50\\ sang \\pau=500\\ to \\pau=500\\ her \\pau=500\\ eggs		3=NextLine \\rspd=50\\ the \\pau=500\\ song \\pau=500\\ her \\pau=500\\ mother \\pau=500\\ had \\pau=500\\ sung \\pau=500\\ to \\pau=500\\ her		4=NextLine \\rspd=50\\ til \\pau=500\\ her \\pau=500\\ little \\pau=500\\ birds 	5=NextLine \\rspd=50\\ cracked \\pau=500\\ out \\pau=500\\ of \\pau=500\\ their \\pau=500\\ shells.
-[110, 111]	6=WordNum 4=LineNum 7=L1 7=B1 4=L2 4=B2 3=L3 3=B3 5=L4 5=B4	1=NextLine \\rspd=50\\ And \\pau=500\\ they \\pau=500\\ opened \\pau=500\\ their \\pau=500\\ beaks \\pau=500\\ and \\pau=500\\ said,		2=NextLine \\rspd=50\\ when \\pau=500\\ we \\pau=500\\ fly \\pau=500\\ away,		3=NextLine \\rspd=50\\ which \\pau=500\\ is \\pau=500\\ best,		4=NextLine \\rspd=50\\ North, \\pau=500\\ South, \\pau=500\\ East, \\pau=500\\ or \\pau=500\\ West?
+[0, 1]		2=WordNum 1=LineNum 2=L1 2=B1 						1=NextLine  Fox , story 
+[2, 3]		3=WordNum 1=LineNum 3=L1 2=B1 						1=NextLine  A , red=RTag brown=WTag , Fox 
+[4, 5] 		3=WordNum 2=LineNum 2=L1 2=B1 5=L2 5=B2 			1=NextLine  in , blue=RTag green=WTag , socks 
+[6, 7] 		5=WordNum 3=LineNum 4=L1 4=B1 3=L2 3=B2 2=L3 2=B3 	1=NextLine  doing , tricks , with , 		2=NextLine  orange , clocks=RTag rocks=WTag  
+[8, 9] 		2=WordNum 1=LineNum 2=L1 2=B1 						1=NextLine  The , end
 
 
 
+[10, 11]	1=LineNum 1=Skip 1=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
 
-[250, 251]	3=WordNum 1=LineNum 3=L1 3=B1 0N=S1		1=NextLine  lost , and , found
-
-[252, 253]	12=WordNum 1=LineNum 12=L1 12=B1 0N=S1		1=NextLine once , there , was , a boy=RTag girl=WTag , and , one day , he , found , a penguin=RTag elephant=WTag , at , his , door
-
-[200, 201]	9=WordNum 2=LineNum 6=L1 6=B1 4P=S1 6=L2 6=B2 4N=S2		1=NextLine  The boy , didn't know , where , it , had , come from		2=NextLine but , it , began , to follow , him , everywhere
-
-[ 202, 203]	5=WordNum 2=LineNum 4=L1 4=B1 0P=S1 6=L2 6=B2 2N=S2		1=NextLine The penguin , looked , sad=RTag mad=WTag , and 		2=NextLine  the boy , thought , it , must , be , lost
-
-[204, 205]	5=WordNum 4=LineNum 5=L1 5=B1 10P=S1 3=L2 3=B2 8P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine So , the boy , decided , to help=RTag eat=WTag , the penguin 		2=NextLine find , its way , home 		3=NextLine  he , checked , in , the lost , and , found , office=RTag house=WTag 		4=NextLine but , no one , was , missing , a penguin=RTag crocodile=WTag
-
-[ 206, 207]	5=WordNum 4=LineNum 6=L1 6=B1 10P=S1 3=L2 3=B2 8P=S2 4=L3 4=B3 8N=S3 4=L4 4=B4 10N=S4	1=NextLine  He , asked , some birds , if , they , knew			2=NextLine  where , the penguin , came from		3=NextLine  but , they , ignored=RTag answered=WTag , him		4=NextLine  some birds , are , like , that
+[12, 13]	5=LineNum 0=Skip 1=Read 13=L1 13=B1 0N=S1	8=L2 8=B2 2N=S2 8=L3 8=B3 4N=S3 4=L4 4=B4 6N=S4	4=L5 4=B5 8N=S5				1=NextLine  HEY!		2=NextLine  do you , like , to know , a , secret?		3=NextLine well , everyone , thinks , I am , only			4=NextLine small=RTag big=WTag , and , cute , but , really , I am , the 		5=NextLine bravest , animal=RTag human=WTag , there , ever , was 
 
 
-[208, 209]	5=WordNum 3=LineNum 4=L1 4=B1 1P=S1 4=L2 4=B2 8N=S2	3=L3 3=B3 10N=S3		1=NextLine  the boy , asked , his , duck=RTag doll=WTag	2=NextLine  but , the duck , floated , away		3=NextLine  he , didn't , know
 
-[ 210, 211]	1=WordNum 3=LineNum 6=L1 6=B1 0P=S1 5=L2 5=B2 2N=S2 5=L3 5=B3 4N=S3		1=NextLine  That , night , the boy , couldn't , sleep=RTag eat=WTag , for		2=NextLine  disappointment , he , wanted , to help , the		3=NextLine  penguin , but , he , didn't know , how
+[ 14, 15]	1=LineNum 0=Skip 1=Read 1=L1 1=B1	0N=S1					1=NextLine  No one , is , as brave as , me , and , nothing=RTag everything=WTag , scares , me , you'll , see
 
-[212, 213]	1=WordNum 3=LineNum 6=L1 6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3			1=NextLine  The , next , morning=RTag evening=WTag , he , discovered , that			2=NextLine  penguins , come , from , the south=RTag north=WTag pole.		3=NextLine  but , how , could , he , get , there? 
 
-[ 214, 215]	1=WordNum 4=LineNum 8=L1 8=B1 0P=S1 7=L2 7=B2 2N=S2 7=L3 7=B3 4N=S3	6=L4 6=B4 6N=S4		1=NextLine  He , ran , down , to , the harbour=RTag barber=WTag , and , asked , a		2=NextLine  big , ship , to , take , them , to , the  , south=RTag north=WTag , Pole	3=NextLine  but , his , voice , was , much , too , small=RTag big=WTag	, to 		4=NextLine  be , heard , over , the , ship's , horn
+[16, 17]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
-[270, 271]	
 
-[272, 273]	
+[18, 19]	3=LineNum 0=Skip 1=Read 2=L1 2=B1 0N=S1 7=L2 7=B2 3N=S2 10=L3 10=B3 5N=S3			1=NextLine  HOOT , HOOT		2=NextLine  Don't , listen , to , that , tiny=RTag huge=WTag , little , mouse			3=NextLine  I am , the , wisest , and , bravest , bird=RTag bear=WTag , in , the , skies.
 
-[274, 275]	
 
-[276, 277]	1=WordNum 4=LineNum 9=L1 9=B1 9=L2 9=B2 8=L3 8=B3 6=L4 6=B4		1=NextLine \\rspd=50\\ So \\pau=500\\ together, \\pau=500\\ he \\pau=500\\ and \\pau=500\\ the \\pau=500\\ penguin \\pau=500\\ would \\pau=500\\ row		2=NextLine \\rspd=50\\ to \\pau=500\\ the \\pau=500\\ south \\pau=500\\ pole. \\pau=500\\ The \\pau=500\\ boy \\pau=500\\ took \\pau=500\\ his \\pau=500\\ rowboat		3=NextLine \\rspd=50\\ out of \\rspd=50\\ the cupboard \\rspd=50\\ and \\rspd=50\\ they \\rspd=50\\ tested \\rspd=50\\ it \\rspd=50\\ for 		4=NextLine \\rspd=50\\ size \\rspd=50\\ and \\rspd=50\\ strength.
+[ 20, 21]	1=LineNum 0=Skip 1=Read 11=L1 11=B1 0N=S1					1=NextLine  Bravery , is , my , middle , name , and , nothing , scares=RTag glares=WTag , me , you'll , see 
 
-[278, 279]	1=WordNum 1=LineNum 6=L1 6=B1		1=NextLine \\rspd=50\\ They \\pau=500\\ packed \\pau=500\\ everything \\pau=500\\ they \\pau=500\\ would \\pau=500\\ need
 
-[280, 281]	5=WordNum 2=LineNum 4=L1 4=B1 5=L2 5=B2		1=NextLine \\rspd=50\\ and \\pau=500\\ together \\pau=500\\ they \\pau=500\\ pushed \\pau=500\\ the \\pau=500\\ rowboat \\pau=500\\ out \\pau=500\\ to \\pau=500\\ sea.
+[22, 23]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
+
+
+[24, 25]	4=LineNum 0=Skip 1=Read 2=L1 2=B1 0N=S1 8=L2 8=B2 3N=S2 8=L3 8=B3 5N=S3 4=L4 4=B4 7N=S4		1=NextLine  HEE , HEE!		2=NextLine  That , silly, , old=RTag dead=WTag , owl , didn't , see , me , coming!		3=NextLine  My , dad , says , I am , definitely , the , funniest		4=NextLine  and , bravest , animal , around
+
+
+[ 26, 27]	1=LineNum 0=Skip 1=Read 8=L1 8=B1	0N=S1					1=NextLine Nothing , scares , the , king=RTag queen=WTag , of , mischief , you'll , see!
+
+
+[28, 29]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
+
+
+[30, 31]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine  PEEFF!		2=NextLine  That , goofy , monkey=RTag giraffe=WTag , was , gone , in , a		3=NextLine  snippety  snap! , Danger , is , my , middle , name 		4=NextLine  and , I am , the , bravest , animal , around here.
+
+
+[ 32, 33]	1=LineNum 0=Skip 1=Read 10=L1 10=B1 0N=S1					1=NextLine  With , teeth=RTag tail=WTag , as sharp as , these , nothing , scares , me , you'll , see!
+
+
+[34, 35]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
+
+
+[36, 37]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 5P=S1 7=L2 7=B2 2P=S2 9=L3 9=B3 0N=S3 		1=NextLine  RAWWWRRRR!		2=NextLine That , crocodile=RTag frog=WTag , obviously , forgot , that , I am		2=NextLine , the , strongest , and , bravest , animal , in , all , the , land=RTag skies=WTag
+
+
+[ 48, 49]	1=LineNum 0=Skip 1=Read 10=L1 10=B1 0N=S1					1=NextLine  I know , no , fear , and , nothing , scares , me , you'll , see=RTag hear=WTag
+
+
+[41, 46]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
+
+
+[42, 43]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 10=L2 10=B2 0N=S2 11=L3 11=B3 0N=S3 12=L4 12=B4 0N=S4		1=NextLine  SNORT!		2=NextLine , A mighty , tiger=RTag raccoon=WTag , She's , a , scaredy-cat! , I am , the , biggest=RTag smallest=WTag		3=NextLine and , I am , the , bravest , animal , in , the , whole , wide , world  		4=NextLine  Absolutely , no one , is , as brave as , me , and , nothing , scares , me!  
+
+
+[44, 45]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
+
+
+
+
+
+
+[50, 51]	2=LineNum 1=Skip 1=Read 6=L1 6=B1 7P=S1 6=L2 6=B2 7N=S2		1=NextLine  North , South 	 	2=NextLine  East ,  West 
+
+
+[52, 53]	2=LineNum 0=Skip 1=Read 6=L1 6=B1 2P=S1 6=L2 6=B2 2N=S2		1=NextLine  Once , there was , a little , bird=RTag girl=WTag , all , tucked , into , her , nest=RTag bed=WTag  		2=NextLine  it was , almost , time , for , her , to , fly away 
+
+
+[54, 55]	2=LineNum 0=Skip 1=Read 6=L1 6=B1 2P=S1 6=L2 6=B2 2N=S2		1=NextLine  Her mother , taught , her , to ride , the , wind=RTag snow=WTag 		2=NextLine and , to , fly=RTag walk=WTag , above , and , below , the storms.
+
+
+[ 56, 57]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1		1=NextLine  and , to , glide=RTag jump=WTag , on , the strength  , of , the wind. 
+
+
+[58, 59]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 2P=S1 7=L2 7=B2 0N=S2 7=L3 7=B3 2N=S3  	1=NextLine  And , then , they , would , fly , home		2=NextLine  to , their , nest , in , the , sycamore , tree 		3=NextLine  and , she , would , sing , her , a , song
+
+
+[ 60, 61]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 2P=S1 7=L2 7=B2 0N=S2 7=L3 7=B3 2N=S3 	1=NextLine  And , the , little , bird , would , ask 	2=NextLine  When , I , fly , away , which , is , best			3=NextLine  North , South ,  East ,  or , West?
+
+
+[62, 63]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine  Her , mother , curved , her , a , head , under , her , wing		2=NextLine  and , put , her , other , wing , over , her , little , birds		3=NextLine  As , the , hush , of , the , evening , fell			4=NextLine  the , crickets , sang , their , cricket , song
+
+
+[64, 65]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine  And , the , little , bird , dreamed		2=NextLine   from , the , warmth , of , the , nest			3=NextLine   of , the , North , and , the , South		4=NextLine   and , the , East , and , the , West.	
+
+
+[66, 67]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1				1=NextLine   In , the , bright , new , light , of , the , rising , sun
+
+
+
+[ 68, 69]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1				1=NextLine   She , stretched , her , little , wings , and , flew
+
+
+[70, 71]	2=LineNum 0=Skip 1=Read 6=L1 6=B1 0N=S1 6=L2 6=B2 0N=S2			1=NextLine   And , she , flew , on , the , wind , to , the , north		2=NextLine   to , a , land , of , ice , and , snow
+
+
+[ 72, 73]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1			1=NextLine   Where , everything , was , white
+
+
+[74, 75]	2=LineNum 0=Skip 1=Read 6=L1 6=B1 0N=S1 6=L2 6=B2 0N=S2			1=NextLine   But  ,  it  ,  was  ,  too  ,  cold  ,  for  ,  the  ,  little  ,  bird		2=NextLine   to  ,  rest  ,  or  ,  build  ,  her  ,  nest
+
+
+[ 76, 77]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3		1=NextLine   And  ,  so  ,  she  ,  flew  ,  around 		2=NextLine   the  ,  North  ,  Pole 		3=NextLine   and  ,  headed  ,  south
+
+
+[ 78, 79]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1	1=NextLine   Til  ,  the  ,  sea  ,  was  ,  blue,  ,  and  ,  the  ,  trees  ,  were  ,  green , and  ,  the  ,  thickets  ,  were  ,  full  ,  of  ,  flowers.
+
+
+
+
+[80, 81]	2=LineNum 0=Skip 1=Read 6=L1 6=B1 0N=S1 6=L2 6=B2 0N=S2			1=NextLine   But  ,  it  ,  was  ,  too  ,  hot  ,  there  ,  to  ,  build  ,  a  ,  nest,		2=NextLine   so  ,  the  ,  little  ,  bird  ,  rested  ,  and  ,  then  ,  she  ,  headed  ,  West
+
+[82, 83]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1		1=NextLine   Over  ,  mountains  ,  and  ,  rivers  ,  and  ,  plains , to  ,  where  ,  the  ,  red  ,  sun  ,  sank  ,  into  ,  the  ,  sea
+
+[84, 85]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine   She  ,  had  ,  flown  ,  to  ,  the  ,  North		2=NextLine   and  ,  the  ,  South  ,  and  ,  the  ,  West.		3=NextLine   But  ,  which  ,  direction		4=NextLine   did  ,  she  ,  like  ,  best?
+
+
+[86, 87]	2=LineNum 0=Skip 1=Read 6=L1 6=B1 0N=S1 6=L2 6=B2 0N=S2			1=NextLine   She  ,  sat  ,  on  ,  a  ,  rock  ,  by  ,  the  ,  edge  ,  of  ,  the  ,  sea.		2=NextLine   And  ,  she  ,  thought  ,  of  ,  her  ,  home  ,  in  ,  the  ,  synamore  ,  tree
+
+
+[ 88, 89]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3		1=NextLine   She  ,  had  ,  flown  ,  to  ,  the  ,  North		2=NextLine   and  ,  the  ,  south  ,  and  ,  the  ,  West		3=NextLine   But  ,  the  ,  East  ,  was  ,  home
+
+
+[90, 91]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1			1=NextLine   So  ,  she  ,  stretched  ,  her  ,  wings , And  ,  flew  ,  into  ,  the  ,  rising  ,  sun
+
+
+[92, 93]	5=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4 2=L5 2=B5 7N=S5		1=NextLine   Over  ,  the  ,  high  ,  mountains.		2=NextLine   over  ,  the  ,  deep  ,  canyons,		3=NextLine   over  ,  the  ,  great  ,  forests		4=NextLine   and  ,  plains		5=NextLine   she  ,  flew
+
+
+[94, 95]	1=LineNum 0=Skip 1=Read 9=L1 9=B1 0N=S1	1=NextLine   Til  ,  she  ,  came  ,  to  ,  where  ,  the  ,  land  ,  was  ,  soft  ,  and  ,  green  ,  with  ,  rain , and  ,  the  ,  sycamore  ,  trees  ,  grew  ,  tall
+
+
+[96, 97]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine   In  ,  the  ,  spring		2=NextLine   when  ,  the  ,  wild  ,  birds  ,  sing		3=NextLine   in  ,  the  ,  wild  ,  green  ,  forests	4=NextLine   of  ,  the  ,  East 
+
+
+[98, 99]	5=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4 5=L5 5=B5 7N=S5		1=NextLine   the  ,  little  ,  bird  ,  a  ,  big  ,  bird  ,  now		2=NextLine   sang  ,  to  ,  her  ,  eggs		3=NextLine   the  ,  song  ,  her  ,  mother  ,  had  ,  sung  ,  to  ,  her		4=NextLine   til  ,  her  ,  little  ,  birds 	5=NextLine   cracked  ,  out  ,  of  ,  their  ,  shells. 
+
+
+[100, 101]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine   And  ,  they  ,  opened  ,  their  ,  beaks  ,  and  ,  said,		2=NextLine   when  ,  we  ,  fly  ,  away,		3=NextLine   which  ,  is  ,  best,		4=NextLine   North,  ,  South,  ,  East,  ,  or  ,  West?
+
+
+[102, 103]	
+
+
+[104, 105]	
+
+
+[106, 107]	
+
+
+[108, 109]	
+
+
+[110, 111]	
+
+
+
+
+
+
+[250, 251]		1=LineNum 1=Skip 1=Read	 3=L1 	3=B1 0N=S1						1=NextLine  lost , and , found
+
+
+[252, 253]		1=LineNum 0=Skip 1=Read	 12=L1 	12=B1 0N=S1						1=NextLine  once , there , was , a , boy=RTag girl=WTag , and , one day , he , found , a , penguin=RTag elephant=WTag , at , his , door
+
+
+[200, 201]		2=LineNum 0=Skip 1=Read	 6=L1 6=B1 4P=S1 6=L2 6=B2 4N=S2		1=NextLine  The boy , didn't know , where , it , had , come , from		2=NextLine but , it , began=RTag stop=WTag , to , follow , him , everywhere
+
+
+[ 202, 203]		2=LineNum 0=Skip 1=Read	4=L1 	4=B1 0P=S1 6=L2 6=B2 2N=S2		1=NextLine  The penguin , looked , sad=RTag happy=WTag , and 		2=NextLine  the boy , thought , it , must , be , lost=RTag cost=WTag
+
+
+[204, 205]		4=LineNum 0=Skip 1=Read	 5=L1 	5=B1 10P=S1 3=L2 3=B2 8P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine  So , the boy , decided , to , help=RTag eat=WTag , the , penguin 		2=NextLine  find , its , way , home 		3=NextLine  he , checked , in , the lost , and , found=RTag lost=WTag , office=RTag house=WTag 		4=NextLine but , no one , was , missing=RTag seeing=WTag , a penguin
+
+
+[ 206, 207]		4=LineNum 0=Skip 1=Read	 6=L1 	6=B1 10P=S1 3=L2 3=B2 8P=S2 4=L3 4=B3 8N=S3 4=L4 4=B4 10N=S4	1=NextLine  He , asked , some , birds=RTag fishes=WTag , if , they , knew			2=NextLine  where , the penguin , came from		3=NextLine  but , they , ignored , him=RTag her=WTag		4=NextLine  some birds , are , like , that
+
+
+
+[208, 209]		3=LineNum 0=Skip 1=Read	 4=L1 	4=B1 1P=S1 4=L2 4=B2 8N=S2	3=L3 3=B3 10N=S3		1=NextLine  the boy , asked , his , duck=RTag doll=WTag	2=NextLine  but , the duck , floated , away		3=NextLine  he , didn't , know
+
+
+[ 210, 211]		3=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 5=L2 5=B2 2N=S2 5=L3 5=B3 4N=S3			1=NextLine  That , night=RTag day=WTag , the boy , couldn't , sleep=RTag eat=WTag , for		2=NextLine  disappointment , he , wanted , to help , the		3=NextLine  penguin , but , he , didn't know , how
+
+
+[212, 213]		3=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3			1=NextLine  The , next , morning=RTag evening=WTag , he , discovered , that			2=NextLine  penguins , come , from , the south=RTag north=WTag pole.		3=NextLine  but , how , could , he , get , there? 
+
+
+[ 214, 215]		4=LineNum 0=Skip 1=Read 	8=L1	 8=B1 0P=S1 7=L2 7=B2 2N=S2 7=L3 7=B3 4N=S3	6=L4 6=B4 6N=S4		1=NextLine  He , ran , down , to , the harbour=RTag barber=WTag , and , asked , a		2=NextLine  big , ship , to , take , them , to , the  , south=RTag north=WTag , Pole	3=NextLine  but , his , voice , was , much , too , small=RTag big=WTag	, to 		4=NextLine  be , heard , over , the , ship's , horn
+
+
+
+[216, 217]		5=LineNum 0=Skip 1=Read	9=L1 9=B1 9=L2 9=B2 8=L3 8=B3 6=L4 6=B4		1=NextLine   So  ,  together,  ,  he  ,  and  ,  the  ,  penguin  ,  would  ,  row		2=NextLine   to  ,  the  ,  south  ,  pole.  ,  The  ,  boy  ,  took  ,  his  ,  rowboat		3=NextLine   out of   the cupboard   and   they   tested   it   for 		4=NextLine   size   and   strength 			5=NextLine   They  ,  packed  ,  everything  ,  they  ,  would  ,  need
+
+
+[218, 219]		2=LineNum 0=Skip 1=Read	4=L1 4=B1 5=L2 5=B2		1=NextLine   and  ,  together  ,  they  ,  pushed 		 2=NextLine   the  ,  rowboat  ,  out  ,  to  ,  sea	
+
+
+[220, 221]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		1=NextLine  They , rowed , south , for , many , days 
+
+
+[222, 223]		3=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine   and  ,  nights , with , the boy , telling , stories , all  		 2=NextLine   the  ,  way , the , penguin , listened , to , everything  	3=NextLine 	that , the , boy , said
+
+
+[224, 225]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		1=NextLine  They , floated , through , good , weather , and , bad
+
+
+[226, 227]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		1=NextLine  when , the , waves , were , as , big , as , mountains
+
+
+[228, 229]		4=LineNum	 5=L1 	5=B1 10P=S1 3=L2 3=B2 8P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine  until , they , came , to , the , south , pole 		2=NextLine  the boy , was , delighted  		3=NextLine  but , the penguin , said , nothing  		4=NextLine suddenly , it , looked , sad , again , as 		5=NextLine  the boy , helped , it , out ,  of , the boat 
+
+
+[230, 231]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		1=NextLine  the boy , said , goodbye 
+
+
+[232, 233]		2=LineNum 0=Skip 1=Read	4=L1 4=B1 5=L2 5=B2		1=NextLine   and  ,  floated , away , but , as , he , looked , back		 2=NextLine   the penguin , looked , sadder , than , ever
+
+
+[234, 235]		2=LineNum 0=Skip 1=Read	4=L1 4=B1 5=L2 5=B2		1=NextLine   it , felt , strange , to , be , on , his , own 		 2=NextLine   and , the , more , he , thought 	
+
+
+[236, 237]		4=LineNum 0=Skip 1=Read	 5=L1 	5=B1 10P=S1 3=L2 3=B2 8P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine  the , more , he  		2=NextLine  realized , he , was   		3=NextLine making , a , big   		4=NextLine mistake			5=NextLine  the penguin , wasn't , lost , he , was , just, lonely 
+
+
+[238, 239]		3=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine   quickly , he , turned , the boat , around  		 2=NextLine  and , headed , back , to , the , south , pole  	3=NextLine 	as , fast , as , he , could
+
+
+[240, 241]		8=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine   at last , he , reached   		 2=NextLine   the  ,  pole , again  	3=NextLine 	but , where , was  		 4=NextLine  the penguin 		5=NextLine 	the boy , searched 		6=NextLine 	and , searched , but 		7=NextLine 	he , was , nowhere			8=NextLine  to , be , found
+
+
+[242, 243]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		1=NextLine  sadly , the boy , set , off , for , home
+
+
+
+[244, 244]		7=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine   there , was , no , point , telling , stories  		 2=NextLine   because , there , was , no , one , to , listen   	3=NextLine 	except , the wind , and , the waves  		 4=NextLine  but  , then , the boy , saw , something		5=NextLine 	in , the , water , ahead , of , him 		6=NextLine 	closer , and , closer , he , got		7=NextLine 	until , he , could , see 
+
+
+[245, 246]		7=LineNum 0=Skip 1=Read	 1=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine   the penguin
+
+
+[238, 239]		3=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine  and , so , the boy , and , his , friend , went  		 2=NextLine  home , together , talking , of , wonderful 	3=NextLine things , all , the , way

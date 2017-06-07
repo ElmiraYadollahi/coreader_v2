@@ -58,6 +58,10 @@ from numpy.linalg import inv
 from EEClass import EYEEMOTIONS
 from MTClass import TRANSFORMATION
 from WPClass import WORDPROCESSING
+from RTClass import RECORDANDTRANSCRIBE
+from IMClass import IDLEMOVEMENTTHREADING
+from MAClass import MOTIONANIMATIONSELECTION
+from logger import logger
 
 """ It is a dictionary for the states of the tag:
 	False: 						means the story have not be read yet, it will go into reading with wrong tag 
@@ -77,11 +81,52 @@ pairs_dict = {	'[0, 1]' : False,
 				'[6, 7]' : False,
 				'[8, 9]' : False,
 				'[10, 11]' : False,
+				'[12, 13, 14, 15]' : False,
 				'[12, 13]' : False,
-				'[14, 15]' : False,
+				'[ 14, 15]' : False,
 				'[16, 17]' : False,
+				'[18, 19, 20, 21]' : False,
 				'[18, 19]' : False,
-				'[20, 21]' : False,
+				'[ 20, 21]' : False,
+				'[22, 23]' : False,
+				'[24, 25, 26, 27]' : False,
+				'[24, 25]' : False,
+				'[ 26, 27]' : False,
+				'[28, 29]' : False,
+				'[30, 31, 32, 33]' : False,
+				'[30, 31]' : False,
+				'[ 32, 33]' : False,
+				'[34, 35]' : False,
+				'[36, 37, 48, 49]' : False,
+				'[36, 37]' : False,
+				'[ 48, 49]' : False,
+				'[41, 46]' : False,
+				'[42, 43]' : False,
+				'[44, 45]' : False,
+
+				'[50, 51]' : False,
+				'[52, 53]' : False,
+				'[54, 55, 56, 57]' : False,
+				'[54, 55]' : False,
+				'[ 56, 57]' : False,
+				'[58, 59, 60, 61]' : False,
+				'[58, 59]' : False,
+				'[ 60, 61]' : False,
+				'[62, 63]' : False,
+				'[64, 65]' : False,
+				'[66, 67, 68, 69]' : False,
+				'[66, 67]' : False,
+				'[ 68, 69]' : False,
+				'[70, 71, 72, 73]' : False,
+				'[70, 71]' : False,
+				'[ 72, 73]' : False,
+				'[74, 75, 76, 77]' : False,
+				'[74, 75]' : False,
+				'[ 76, 77]' : False,
+				'[78, 79]' : False,
+
+
+
 				'[250, 251]' : False,
 				'[252, 253]' : False,
 				'[200, 201, 202, 203]' : False,
@@ -141,6 +186,7 @@ instruction_tags_dict = {	'=LineNum',
 							'=wordNum',
 							'=MistakeNum',
 							'=NextLine',
+							'=Skip',
 							'=L1',
 							'=L2',
 							'=L3',
@@ -295,7 +341,7 @@ class MOTION_ANIMATION_SELECTION:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
 			wordsBefore = "\\rspd=80\\ Yeaaah!!!"
-			sleepTime = 3
+			sleepTime = 1
 			wordsAfter = "\\rspd=70\\ Thank you"
 			reactToTheMistake(emotion, animations.winner_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 
@@ -303,44 +349,44 @@ class MOTION_ANIMATION_SELECTION:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
 			wordsBefore = "\\rspd=60\\ Yeaaah!!!"		
-			sleepTime = 2
-			wordsAfter = "\\rspd=80\\ Thank you"
+			sleepTime = 1
+			wordsAfter = "\\rspd=80\\ this is great"
 			reactToTheMistake(emotion, animations.winner2_seated_pose, wordsBefore, wordsAfter, sleepTime, 1.0)
 
 		if motionProxyNum == 3:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
 			wordsBefore = "\\rspd=80\\ Yeaaah!!!"		
-			sleepTime = 2
+			sleepTime = 1
 			wordsAfter = "\\rspd=80\\ I made it "
 			reactToTheMistake2(animations.relieved_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 
 		if motionProxyNum == 4:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
-			wordsBefore = "\\rspd=80\\ Yeaaah!!!"		
-			sleepTime = 2
-			wordsAfter = "\\rspd=80\\ "
+			wordsBefore = "\\rspd=80\\ Wow!!!"		
+			sleepTime = 1
+			wordsAfter = "\\rspd=80\\ I was right"
 			reactToTheMistake(emotion, animations.proud_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.9)
 
 		if motionProxyNum == 5:
 			wordsBefore = "\\rspd=80\\ Yeaaah!!!"		
-			sleepTime = 3
-			wordsAfter = "\\rspd=80\\ "
+			sleepTime = 1
+			wordsAfter = "\\rspd=80\\ I read it correctly"
 			reactToTheMistake(emotion, animations.happy_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 
 		if motionProxyNum == 6:
-			wordsBefore = "\\rspd=70\\ Yeaaah!!!"		
-			sleepTime = 2
-			wordsAfter = "\\rspd=70\\ "
+			wordsBefore = "\\rspd=70\\ I'm so happy !!!"		
+			sleepTime = 1
+			wordsAfter = "\\rspd=70\\ I was right"
 			reactToTheMistake(emotion, animations.happy2_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
 
 		if motionProxyNum == 7:
 			wordsBefore = "\\rspd=70\\ Yeaaah!!!"		
-			sleepTime = 2
-			wordsAfter = "\\rspd=80\\ "
+			sleepTime = 1
+			wordsAfter = "\\rspd=80\\ this is great"
 			reactToTheMistake(emotion, animations.happy3_pose, wordsBefore, wordsAfter, sleepTime)
 
 
@@ -361,14 +407,14 @@ class MOTION_ANIMATION_SELECTION:
 		if motionProxyNum == 2:
 			#pitch_angle = 0.0
 			#LookAtTheBook(pitch_angle)
-			wordsAfter = "\\rspd=70\\ hmm"			
+			wordsAfter = "\\rspd=70\\ hmm, I'm sleepy"			
 			sleepTime = 2
 			reactToBoredness(emotion, animations.scratchHand_seated_pose, sleepTime, wordsAfter, 0.7)
 
 		if motionProxyNum == 3:
 			#pitch_angle = 0.0
 			#LookAtTheBook(pitch_angle)
-			wordsAfter = "\\rspd=70\\ hmm"
+			wordsAfter = "\\rspd=70\\ hmm, I'm tired"
 			sleepTime = 2
 			reactToBoredness(emotion, animations.lookHand_seated_pose, sleepTime, wordsAfter, 0.7)
 
@@ -421,6 +467,17 @@ def cardPointedAt(msg):
 global breakPoint
 breakPoint = [0, 0]
 
+def changeToPose(res):
+	middle_pose = Pose()
+	middle_pose.position.x = res[0]
+	middle_pose.position.y = res[1]
+	middle_pose.position.z = res[2]
+	middle_pose.orientation.x = res[3]
+	middle_pose.orientation.y = res[4]
+	middle_pose.orientation.z = res[5]
+	middle_pose.orientation.w = 1
+
+	return middle_pose
 
 def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 
@@ -435,33 +492,49 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 	global REDCardAllert
 	global reactionPermission
 	global breakPoint
+	global robot_hand_pose_pub
+	useSensorValues = True
 
 	for j in range(len(ARTag)):
 		print j 
-		wordProc = WORDPROCESSING(story, ARTag[j], taskLevel_dict)
+		wordProc = WORDPROCESSING(story, ARTag[j], taskLevel_dict, proxy)
 
-		INTag = "=WordNum"
-		wordCount = wordProc.getTheInstructionTagData(INTag)
+		#INTag = "=WordNum"
+		#wordCount = wordProc.getTheInstructionTagData(INTag)
 		INTag = "=LineNum"
 		lineCount = wordProc.getTheInstructionTagData(INTag)
-		LiWoCount = []
+		INTag = "=Skip"
+		skipOrNot = wordProc.getTheInstructionTagData(INTag)
+		print "skipOrNot"
+		print skipOrNot
+		INTag = "=Read"
+		readOrNot = wordProc.getTheInstructionTagData(INTag)
+		print "readOrNot"
+		print readOrNot
+		LiWoCount2 = []
 		lineDistanceCoef = []
 		#if lineCount > 1:
 		for i in range(lineCount):
 			INTag = "=L" + str((i+1))
-			LiWoCount.append(wordProc.getTheInstructionTagData(INTag))
+			LiWoCount2.append(wordProc.getTheInstructionTagData(INTag))
 
 			INTag = "=S" + str((i+1))
 			lineDistanceCoef.append(0.01 * wordProc.getTheInstructionTagData(INTag))
 
+		LiWoCount = wordProc.getNumberOfWords(lineCount)
 		#elif lineCount == 1:
 			#LiWoCount.append(wordCount)
-		
+		print "LiWoCount"
 		print LiWoCount
 		print lineDistanceCoef
 
+		print "LiWoCount2"
+		print LiWoCount2
+
 		print "lineCount"
 		print lineCount
+
+		wordProc.toCorrectOrNotTo(ARTag)
 
 
 		wordProc.getTheLineMatrix()
@@ -508,48 +581,62 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 
 		hardWord = 4
 
+		global current_word_pub
+		global robot_state_pub
+		robot_state_pub.publish("Reading Mode Started")
+
 		print "len trajComplete2"
 		print len(trajComplete2)
 		#wordProc.readTheTaggedStory(correctPermission)
 
 		if taskLevel_dict['CurrLevel'] == "TaskONE":
+			if readOrNot == 1:
+				for i in range(len(trajComplete2)):
 
-			for i in range(len(trajComplete2)):
+					print "len(trajComplete2[i][0]"
+					print len(trajComplete2[i][0])
 
-				print "len(trajComplete2[i][0]"
-				print len(trajComplete2[i][0])
+					for j in range(len(trajComplete2[i][0])):
+						if REDCardAllert == True:
+							break
+				
+						tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
+						tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
+				
+						#print result
 
-				for j in range(len(trajComplete2[i][0])):
-					if REDCardAllert == True:
-						break
+						if j == 0:
+							#wordProc.readFromWordMatrix(correctPermission, j, i+1, REDCardAllert)
+							if REDCardAllert == True:
+								break
+							#wordProc.readFromMatrixLine(correctPermission, i+1, REDCardAllert)
+							print "correct permission"
+							print correctPermission
+							x = True
+							if REDCardAllert == True:
+								break
+						if (j ) %4 == 0:
+
+							result          = motionProxy.getPosition("RHand", frame, useSensorValues)
+							handPose = changeToPose(result)
+							#print handPose
+							robot_hand_pose_pub.publish(handPose)		
+
+							correctFlag = wordProc.readFromWordMatrix(correctPermission, j/4, i+1, breakPoint, REDCardAllert, taskLevel_dict['CurrLevel'], ARTag, current_word_pub)
+							currReadingPoint = [i+1, j/4]
+							print "j"
+							print j
+							print "j/4"
+							print j/4
 			
-					tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
-					tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
-					
-
-					if j == 0:
-						#wordProc.readFromWordMatrix(correctPermission, j, i+1, REDCardAllert)
-						if REDCardAllert == True:
-							break
-						#wordProc.readFromMatrixLine(correctPermission, i+1, REDCardAllert)
-						print "correct permission"
-						print correctPermission
-						x = True
-						if REDCardAllert == True:
-							break
-					if (j ) %4 == 0:
-
-						correctFlag = wordProc.readFromWordMatrix(correctPermission, j/4, i+1, breakPoint, REDCardAllert)
-						currReadingPoint = [i+1, j/4]
-						print "j"
-						print j
-						print "j/4"
-						print j/4
-		
-						#if j/4 == (hardWord-1):
-							#stopAndAsk()
-							#time.sleep(2)
-						time.sleep(0.4)
+							#if j/4 == (hardWord-1):
+								#stopAndAsk()
+								#time.sleep(2)
+							time.sleep(0.4)
+			elif readOrNot == 0:
+				animationSelection = MOTION_ANIMATION_SELECTION()
+				animationSelection.reactionToSpecificTags()
+				correctFlag = True
 
 			#correctPermission = True
 
@@ -563,6 +650,8 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 
 			if correctFlag == "Partial Correction":
 				correctPermission = "Partial Correction"
+				breakPoint = [0, 0]
+
 
 			elif correctFlag == True:
 				correctPermission = True
@@ -587,6 +676,12 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 			
 					tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
 					tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
+					result          = motionProxy.getPosition("RHand", frame, useSensorValues)
+					#robot_hand_pose_pub.publish(result)		
+					print result
+					handPose = changeToPose(result)
+					#print handPose
+					robot_hand_pose_pub.publish(handPose)	
 					
 
 					if j == 0:
@@ -601,7 +696,7 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 							break
 					if (j ) %4 == 0:
 
-						correctFlag = wordProc.readFromWordMatrix(correctPermission, j/4, i+1, breakPoint, REDCardAllert)
+						correctFlag = wordProc.readFromWordMatrix(correctPermission, j/4, i+1, breakPoint, REDCardAllert, taskLevel_dict['CurrLevel'], ARTag, current_word_pub)
 						currReadingPoint = [i+1, j/4]
 						print "j"
 						print j
@@ -625,12 +720,15 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 
 			if correctFlag == "Partial Correction":
 				correctPermission = "Partial Correction"
+				breakPoint = [0, 0]
+
 
 			elif correctFlag == True:
 				correctPermission = True
 				breakPoint = [0, 0]
 
-				
+
+
 			print "correctPermission"
 			print correctPermission
 			print "breakPoint"
@@ -641,60 +739,70 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 
 
 		elif taskLevel_dict['CurrLevel'] == "TaskTHREE":
-			
-			for i in range(len(trajComplete2)):
 
-				print "len(trajComplete2[i][0]"
-				print len(trajComplete2[i][0])
+			#correctFlag = wordProc.toCorrectOrNotTo(correctPermission, j/4, i+1, breakPoint, REDCardAllert, taskLevel_dict['CurrLevel'], ARTag)
+			if readOrNot == 1:
+				for i in range(len(trajComplete2)):
 
-				for j in range(len(trajComplete2[i][0])):
-					if REDCardAllert == True:
-						break
-			
-					tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
-					tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
-					
-
-					if j == 0:
-						#wordProc.readFromWordMatrix(correctPermission, j, i+1, REDCardAllert)
+					for j in range(len(trajComplete2[i][0])):
 						if REDCardAllert == True:
 							break
-						#wordProc.readFromMatrixLine(correctPermission, i+1, REDCardAllert)
-						print "correct permission"
-						print correctPermission
-						x = True
-						if REDCardAllert == True:
-							break
-					if (j ) %4 == 0:
 
-						correctFlag = wordProc.readFromWordMatrix(correctPermission, j/4, i+1, breakPoint, REDCardAllert)
-						currReadingPoint = [i+1, j/4]
-						print "j"
-						print j
-						print "j/4"
-						print j/4
-		
-						#if j/4 == (hardWord-1):
-							#stopAndAsk()
-							#time.sleep(2)
-						time.sleep(0.4)
+						tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
+						tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
+						result          = motionProxy.getPosition("RHand", frame, useSensorValues)
+						print result
+						#robot_hand_pose_pub.publish(result)		
+						print result
+						handPose = changeToPose(result)
+						#print handPose
+						robot_hand_pose_pub.publish(handPose)	
+						
+						if j == 0:
+							if REDCardAllert == True:
+								break
+							print "correct permission"
+							print correctPermission
+							x = True
 
-			#correctPermission = True
+						if j % 4 == 0:
+
+							correctFlag = wordProc.readFromWordMatrix(correctPermission, j/4, i+1, breakPoint, REDCardAllert, taskLevel_dict['CurrLevel'], ARTag, current_word_pub)
+							currReadingPoint = [i+1, j/4]
+							print "j", j
+							print "j/4", j/4
+							time.sleep(0.4)
+
+			elif readOrNot == 0:
+				animationSelection = MOTION_ANIMATION_SELECTION()
+				animationSelection.reactionToSpecificTags()
+				correctFlag = True
 
 			if REDCardAllert == True:
 				correctPermission = "Partial Correction"
 				breakPoint = currReadingPoint
+				wordProc.saveAndUpdate(ARTag, readOrNot)
 				print "breakPoint"
 				print breakPoint
 				break
 
+			global robot_state_pub
+			robot_state_pub.publish("Reading Mode Ended")
+			
+			wordProc.saveAndUpdate(ARTag, readOrNot)
 
 			if correctFlag == "Partial Correction":
 				correctPermission = "Partial Correction"
+				breakPoint = [0, 0]
 
 			elif correctFlag == True:
 				correctPermission = True
 				breakPoint = [0, 0]
+
+			elif correctFlag == False:
+				correctPermission = False
+
+
 
 				
 			print "correctPermission"
@@ -702,15 +810,21 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 			print "breakPoint"
 			print breakPoint
 
-		time.sleep(1.5)		
+
+
+		time.sleep(0.2)		
 		# Empty the arrays
 		pitch_angle = 0.3
 		LookAtTheBook(pitch_angle)
 
-		if correctPermission == False:
-			story.post.say("\\rspd=80\\ did I read it \\pau=50\\ correctly?") 
-		elif correctPermission == True:
-			story.post.say("\\rspd=80\\ what about \\pau=20\\ this time?") 
+		if skipOrNot == 0:
+			time.sleep(0.7)
+			print "NotSkip"
+			if correctPermission == False:
+				valuationAfterFirst() 
+
+			elif correctPermission == True:
+				valuationAfterRepeat()
 
 		trajComplete2 = []
 		wordProc.cleanStory()
@@ -718,6 +832,47 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 		reactionPermission = True
 		blinkingModeON("ON")
 		idleMovementModeON("ON")
+
+def valuationAfterFirst():
+	Num = random.randint(1,5)
+
+	if Num == 1:
+		story.post.say("\\rspd=90\\ did I read it \\pau=40\\ correctly?") 
+
+	if Num == 2:
+		story.post.say("\\rspd=80\\ what do you think? \\pau=40\\ was I good?")
+
+	if Num == 3:
+		story.post.say("\\rspd=80\\ Should I read it again?")
+
+	if Num == 4:
+		story.post.say("\\rspd=80\\ can I know your opinion?")
+
+	if Num == 5:
+		story.post.say("\\rspd=80\\ I'm done, was it good?")
+
+	if Num == 6:
+		story.post.say("\\rspd=80\\ did I read it \\pau=50\\ correctly?")
+
+
+
+def valuationAfterRepeat():
+	Num = random.randint(1,5)
+
+	if Num == 1:
+		story.post.say("\\rspd=80\\ what about \\pau=20\\ this time?")  
+
+	if Num == 2:
+		story.post.say("\\rspd=80\\ I hope I read it correctly?")
+
+	if Num == 3:
+		story.post.say("\\rspd=80\\ did I correct my mistake?")
+
+	if Num == 4:
+		story.post.say("\\rspd=80\\ Did I make a mistake again?")
+
+	if Num == 5:
+		story.post.say("\\rspd=80\\ can I know your opinion again?")
 
 
 
@@ -727,7 +882,16 @@ def stopAndAsk():
 	story.say("\\rspd=80\\ I don't know how to read this word") 
 	story.say("\\rspd=80\\ can you help me?")
 	# activate Speech recognition
+	# record the audio
+	# get the text back 
+	if empty:
+		story.say("\\rspd=80\\ sorry I couldn't hear you?")
 
+	if full:
+		if confidenceLevel >= threshold:
+			story.say("\\rspd=80\\ Oh! now I understood. It is " + recognizedWord + ".")
+		elif confidenceLevel < threshold:
+			story.say("\\rspd=80\\ did you say" + recognizedWord + "?")
 
 
 
@@ -808,8 +972,8 @@ def readAndMoveInstruction( cameraName, handMovePermission, detected_tag):
 	global ARTag
 	ARTag = []
 	ARRec = detected_tag
-	ARRec = ARRec.replace('[', '').replace(']', '')
-	foundAR = re.split(",", ARRec)
+	ARRec2 = ARRec.replace('[', '').replace(']', '')
+	foundAR = re.split(",", ARRec2)
 	print foundAR
 	if len(foundAR) == 2:
 		tagNum = 2
@@ -846,7 +1010,7 @@ def tagDetection(msg):
 	"""
 	#faceTrackingEnded()
 	global delaytime
-	global wordCount
+	#global wordCount
 	global moveHand
 	global correctPermission
 	global reactionPermission
@@ -854,21 +1018,17 @@ def tagDetection(msg):
 	global whichPage
 	global breakPoint
 	global NumOfGreenCard
+	global ARRec
+	global robot_state_pub
 	animationSelection = MOTION_ANIMATION_SELECTION()
 	
 	# initializing classes
-	
-	#global selectedStory
 
-
-	#wordProc = WORDPROCESSING(ARTag)
-	#print "tag"
-	#print tag
 	taskSelection()
 	cameraName = 'CameraBottom'
-	
-	#wordCount = wordProc.storySelection(tag)
-	#rospy.Subscriber("target_pose", PoseArray, getTagLocations, cameraName)
+
+	#if taskLevel_dict['CurrLevel'] == "TaskFINISH":
+		#break
 
 	# Tilt the roobot's head to the front
 	pitch_angle = 0.2
@@ -880,34 +1040,37 @@ def tagDetection(msg):
 
 
 	ARRec = msg.data
-	ARRec = ARRec.replace('[', '').replace(']', '')
-	foundAR = re.split(",", ARRec)
+	#print "ARRec"
+	#print ARRec
+	#robot_state_pub.publish("Tags " + ARRec + " Detected")
+	ARRec2 = ARRec.replace('[', '').replace(']', '')
+	foundAR = re.split(",", ARRec2)
 	if len(foundAR) == 2:
 		tagNum = 2
 		RecTag = msg.data
 		tagLeft = msg.data
+
 
 	elif len(foundAR) == 4:
 		tagNum = 4
 		tagLeft	 = '[' + foundAR[0] + "," + foundAR[1] + ']'
 		tagRight = '[' + foundAR[2] + "," + foundAR[3] + ']'
 
-		RecTag = tagLeft
-		whichPage = "Left"
-		pairs_dict[ARRec] = "Left"
-		delaytime += 1
-		print delaytime
-		if (pairs_dict[tagLeft] == True or pairs_dict[ARRec] == "Switch"):
+		#print "left right"
+		#print tagLeft, tagRight
+		if (pairs_dict[tagLeft] == True or pairs_dict[ARRec] == "Switch" or pairs_dict[ARRec] == "Right"):
+			print "I'm in  right"
 			RecTag = tagRight
 			whichPage = "Right"
+			pairs_dict[ARRec] = "Right"
+		else:
+			RecTag = tagLeft
+			whichPage = "Left"
+			pairs_dict[ARRec] = "Left"
+			delaytime += 1
+			print "I'm in left "
+		#print delaytime
 
-	
-	#print "tagNum"
-	#print tagNum
-
-
-
-	#RecTag = msg.data	
 
 
 	for i in pairs_dict:
@@ -931,13 +1094,21 @@ def tagDetection(msg):
 				pairs_dict[i] = "Corrected Mode"
 
 			elif pairs_dict[i] == "Repeat Wrong Mode":
-				pairs_dict[i] = False				
+				pairs_dict[i] = False
+
+			elif pairs_dict[i] == "Repeated Correct Mode":
+				pairs_dict[i] = "Corrected Mode"	
+
+			elif pairs_dict[i] == "Repeated Wrong Mode":
+				pairs_dict[i] = False					
 
 
 
 	rospy.Subscriber('card_id_state', String, cardDetection, RecTag)
 	print pairs_dict[RecTag]
-	print reactionPermission
+	print pairs_dict[ARRec] 
+	#print pairs_dict
+	#print reactionPermission
 
 
 	if pairs_dict[RecTag] == False:
@@ -966,10 +1137,11 @@ def tagDetection(msg):
 			pairs_dict[RecTag] = "Waiting for Green-card"
 			if correctPermission == "Partial Correction":
 				pairs_dict[RecTag] = "Waiting for Red-card"
-				breakPoint = [0, 0]
+				#breakPoint = [0, 0]
 			elif correctPermission == True:
 				breakPoint = [0, 0]
 				pairs_dict[RecTag] = "Waiting for Green-card"
+
 		
 		elif reactionPermission == False:
 			animationSelection.reactionToREDCard()
@@ -983,9 +1155,6 @@ def tagDetection(msg):
 		#wordProc.readTheTaggedStory(selectedStory, True)
 		#pairs_dict[msg.data] = True
 		#pairs_dict[RecTag] = "Waiting for Green-card"
-
-
-
 
 
 	elif pairs_dict[RecTag] == "Correct Happy Mode":
@@ -1063,6 +1232,8 @@ def cardDetection(msg, tag):
 	global REDCardAllert
 	global NumOfGreenCard
 	global correctPermission
+	global ARRec
+	global detected_tags_pub
 
 	red_card = "40"
 	green_card = "39"
@@ -1072,9 +1243,15 @@ def cardDetection(msg, tag):
 	global red_counter
 	#print red_counter
 	if card_id == red_card:
+		
+		detected_tags_pub.publish("RED Card Detected")
+
 		if pairs_dict[tag] == "Waiting for Red-card":
 			pairs_dict[tag] = "Correcting Mode"
 			REDCardAllert = True
+			if correctPermission == False:
+				correctPermission = True
+			#correctPermission = True
 
 		elif pairs_dict[tag] == "Waiting for Green-card":
 			pairs_dict[tag] = "Repeat Correct Mode"
@@ -1082,6 +1259,12 @@ def cardDetection(msg, tag):
 			#motionProxySelection(reac)
 
 	elif card_id == yellow_card:
+		detected_tags_pub.publish("YELLOW Card Detected")
+
+		if pairs_dict[ARRec] == "Right":
+			pairs_dict[ARRec] = "Switch"
+			print "SwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitchSwitch"
+
 
 		if pairs_dict[tag] == False:
 			pairs_dict[tag] = "Repeat Wrong Mode"
@@ -1100,6 +1283,7 @@ def cardDetection(msg, tag):
 
 
 	elif card_id == green_card:
+		detected_tags_pub.publish("GREEN Card Detected")
 
 		if pairs_dict[tag] == "Waiting for Green-card" :
 			#red_counter = 0
@@ -1193,7 +1377,9 @@ def reactToTheMistake( emotion, pose, wordsBefore, wordsAfter, pause, factorSpee
 
 	"""
 	global blinkThread
+	global robot_state_pub
 	#idleMovementMode("OFF")
+	robot_state_pub.publish("Reaction Mode Started")
 	blinkingModeOFF()
 	idleMovementModeOFF()
 	#blinkThread.sleep()
@@ -1215,6 +1401,7 @@ def reactToTheMistake( emotion, pose, wordsBefore, wordsAfter, pause, factorSpee
 	pitch_angle = 0.3
 	LookAtTheBook(pitch_angle)
 	motionProxy.setBreathEnabled('Arms', True)
+	robot_state_pub.publish("Reaction Mode Ended")
 	#blinkThread.start()
 	#motionProxy.setBreathEnabled('Head', True)
 	#postureProxy.goToPosture("Stand", 1.0)
@@ -1307,17 +1494,20 @@ skip = 0
 def idleMovementModeON(mode):
 	global skip
 	global idleThread
-	idleThread = threading.Timer(50, idleMovementModeON, [mode])
+	idleThread = threading.Timer(35, idleMovementModeON, [mode])
 	animationSelection = MOTION_ANIMATION_SELECTION()
 	idleThread.start()
 	skip += 1
 	#print k
 	if mode == "ON":		
 		#emotionReaction.blink_eyes()
-		if skip >= 2: 
+		if skip >= 2:
+			global robot_state_pub
+			robot_state_pub.publish("Idle Mode Reaction Started") 
 			motionProxy.setBreathEnabled('Arms', False)
 			animationSelection.reactionIdleMovement()
 			motionProxy.setBreathEnabled('Arms', True)
+			robot_state_pub.publish("Idle Mode Reaction Ended") 
 		
 
 
@@ -1402,8 +1592,11 @@ def LookAtTheBook(pitch_angle, yaw_angle=0):
 	changes             = -0.5
 	fractionMaxSpeed    = 0.05
 	motionProxy.changeAngles(names, changes, fractionMaxSpeed)"""
+	
+	global robot_state_pub
+	robot_state_pub.publish("Looking at The Book")
 
-	time.sleep(1.0)
+	time.sleep(0.5)
 	motionProxy.setStiffnesses("Head", 0.0)
 
 
@@ -1411,8 +1604,10 @@ def IntroduceNao():
 	"""
 	Nao starts introducing itself when the book cover is in front of him 
 	"""
+	global robot_state_pub
 	global blinkThread 
 
+	robot_state_pub.publish("Introduce Nao Started")
 	# First, wake up
 	#motionProxy.wakeUp()
 	postureProxy.goToPosture("Crouch", 0.5)
@@ -1420,7 +1615,7 @@ def IntroduceNao():
 	motionProxy.setBreathEnabled('Body', False)
 	motionProxy.setBreathEnabled('Arms', True)
 	blinkingModeON("ON")
-	idleMovementModeON("ON")
+	#idleMovementModeON("ON")
 	mode = "ON"
 
 	#motionProxy.setBreathEnabled('Head', True)
@@ -1428,15 +1623,21 @@ def IntroduceNao():
 
 
 	story.setLanguage('English')
-	#story.say("\\rspd=90\\ Hello \\pau=500\\ My name is nao \\pau=500\\ I really like reading short stories")
-	#story.say("\\rspd=90\\ Do you want to listen to them?")
-	#story.say("\\rspd=90\\ sometimes I make mistakes, can you help me to correct them?")
-	time.sleep(1)
-	#story.say("\\rspd=90\\ If you want to read with me, please bring the book")
-	story.say("\\rspd=90\\ Hello")
+	"""story.say("\\rspd=90\\ Hello \\pau=500\\ My name is nao \\pau=500\\ I really like reading short stories")
+	story.say("\\rspd=90\\ Do you want to listen to them?")
+	story.say("\\rspd=90\\ sometimes I make mistakes, can you help me to correct them?")
+	time.sleep(0.1)
+	story.say("\\rspd=90\\ If you want to read with me, please bring the book")
+	story.say("\\rspd=90\\ and don't forget the red, green and yellow card")
+	story.say("\\rspd=90\\ \\pau=50\\ you can show me the red card if I make a mistake")
+	story.say("\\rspd=90\\ \\pau=50\\ the green card when I'm correct")
+	story.say("\\rspd=90\\ \\pau=50\\ and the yellow one, when you want me to repeat")"""
+	#story.say("\\rspd=90\\ Hello")
 	pitch_angle = 0.2
 	#LookAtTheBook(pitch_angle)
-	time.sleep(2)
+	time.sleep(0.5)
+	idleMovementModeON("ON")
+	robot_state_pub.publish("Introduce Nao Ended")
 
 
 
@@ -1446,10 +1647,10 @@ def taskSelection():
 	#print NumOfGreenCard
 
 	taskLevel_dict['PrevLevel'] = taskLevel_dict['CurrLevel'] 
-	print "NumOfGreenCard"
-	print NumOfGreenCard
-	print "CurrLevel "
-	print taskLevel_dict['CurrLevel'] 
+	#print "NumOfGreenCard"
+	#print NumOfGreenCard
+	#print "CurrLevel "
+	#print taskLevel_dict['CurrLevel'] 
 	if NumOfGreenCard == 0:
 		if taskLevel_dict['PrevLevel'] == "TaskNONE":
 			taskLevel_dict['CurrLevel'] = "TaskONE"
@@ -1468,6 +1669,9 @@ def taskSelection():
 		elif taskLevel_dict['PrevLevel'] == "TaskTHREE":
 			taskLevel_dict['CurrLevel'] = "TaskFINISH"
 
+	if taskLevel_dict['PrevLevel'] != taskLevel_dict['CurrLevel']:
+		global robot_state_pub
+		robot_state_pub.publish( taskLevel_dict['CurrLevel'] + " Selected")
 
 #def restartCoReader():
 
@@ -1482,6 +1686,17 @@ def TurnOffCoReader():
 def main():
 
 	rospy.init_node('read_lines_location_event')
+	global robot_state_pub
+	robot_state_pub = rospy.Publisher("robot_state", String, queue_size=5)
+	robot_state_time_pub = rospy.Publisher("robot_state_time", Pose, queue_size=5)
+	global current_word_pub
+	current_word_pub = rospy.Publisher("current_word", String, queue_size=5)
+	current_word_time_pub = rospy.Publisher("current_word_time", Pose, queue_size=5)
+	global detected_tags_pub
+	detected_tags_pub = rospy.Publisher("detected_tags", String, queue_size=5)
+	global robot_hand_pose_pub
+	robot_hand_pose_pub = rospy.Publisher("robot_hand_pose", Pose, queue_size=10)
+	robot_hand_pose_time_pub = rospy.Publisher("robot_hand_pose_time", Pose, queue_size=5)
 
 	#nao_IP = rospy.get_param('~nao_ip')
 	nao_IP = 'nao.local'
@@ -1513,7 +1728,7 @@ def main():
 	# Initialize the node
 
 
-	
+	logFile = logger()
 
 	#storyNum = 1
 	#pub = rospy.Publisher('story_number', String, queue_size=1)
@@ -1521,6 +1736,7 @@ def main():
 	#storySelection()
 
 	# Face tracking activated
+	faceTrackingEnded()
 	facesize = 0.1
 	global restingEnabled 
 	restingEnabled = False
@@ -1536,12 +1752,12 @@ def main():
 	activityLevel = rospy.get_param('actlevel', 'medium')
 	#mistakeNum = numberOfMistakesSelection(activityLevel)
 
-	time.sleep(3)
+	time.sleep(1)
 	IntroduceNao()
 
 	#rospy.Subscriber('tag_id_state', String, IntroduceNao)
 	faceTrackingEnded()
-	time.sleep(1)
+	#time.sleep(1)
 	pitch_angle = 0.3
 	yaw_angle = 0.8
 	LookAtTheBook(pitch_angle)
@@ -1549,10 +1765,21 @@ def main():
 	global effector
 	effector = "LArm"
 
-	
+	"""waitAndRecord = RECORDANDTRANSCRIBE()
+	waitAndRecord.recordTheOutput('new.wav')
+	response = waitAndRecord.transcribeTheOutput()
+	#print recordedWord
+	reWord = response["results"][0]["alternatives"][0]["transcript"]
+	reConf = response["results"][0]["alternatives"][0]["confidence"]
+
+	repeatWord = '\\rspd=80\\' + str(reWord)
+	story.say(repeatWord)
+
+	print reConf
+	print reWord"""
 
 	rospy.Subscriber('tag_id_state', String, tagDetection)
-	
+
 	
 	
 	try:
