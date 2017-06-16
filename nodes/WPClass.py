@@ -318,10 +318,10 @@ class WORDPROCESSING:
 
 		print "WWWExistExistExistExistExistExistExistExistExistExistExistExistExistExist"
 
-		print "string"
-		print str(ARTag)
-		print "toCorrect_DICT"
-		print toCorrect_DICT
+		#print "string"
+		#print str(ARTag)
+		#print "toCorrect_DICT"
+		#print toCorrect_DICT
 
 		if str(ARTag) in toCorrect_DICT:
 
@@ -331,8 +331,8 @@ class WORDPROCESSING:
 			toCorrect_DICT[str(ARTag)] = wrongLocation
 			print "NotExistNotExistNotExistNotExistNotExistNotExistNotExistNotExistNotExist"
 		
-		print "wrongLocation"
-		print wrongLocation
+		#print "wrongLocation"
+		#print wrongLocation
 
 
 
@@ -352,26 +352,26 @@ class WORDPROCESSING:
 
 		wrongLocation = toCorrect_DICT[str(ARTag)]
 
-		print "wrongLocation"
-		print wrongLocation
-		print "toCorrect_DICT"
-		print toCorrect_DICT
+		#print "wrongLocation"
+		#print wrongLocation
+		#print "toCorrect_DICT"
+		#print toCorrect_DICT
 
 		for line in self.lineMatrix:
 			self.wordMatrix.append(re.split('\W+,', line))
 		
 		toCorrectWord =[]
-		print "breakPoint"
-		print breakPoint
-		print level
+		#print "breakPoint"
+		#print breakPoint
+		##print level
 
 		if str(ARTag) in trash_DICT:
 			trashWord = trash_DICT[str(ARTag)]
 		else:
 			trashWord = []
 
-		print "trashWord"
-		print trashWord
+		#print "trashWord"
+		#print trashWord
 
 		for i in range(len(wrongLocation)):
 			if  breakPoint[0] == wrongLocation[i][0]:
@@ -382,8 +382,8 @@ class WORDPROCESSING:
 			#else:
 				#toCorrectWord = toCorrect_DICT[str(ARTag)]
 			
-			print "toCorrectWord"
-			print toCorrectWord
+			#print "toCorrectWord"
+			#print toCorrectWord
 
 
 
@@ -395,13 +395,13 @@ class WORDPROCESSING:
 			#tag = "=RTag"
 			#foundTag = re.search(tag, wrongWord)
 			#if foundTag != None:
-		print "wrongLocation"
-		print wrongLocation
-		print "wordMatrix"
-		print self.wordMatrix
-		print len(self.wordMatrix)
-		print wordN
-		print lineN
+		#print "wrongLocation"
+		#print wrongLocation
+		#print "wordMatrix"
+		#print self.wordMatrix
+		#print len(self.wordMatrix)
+		#print wordN
+		#print lineN
 		skip = False
 
 
@@ -411,24 +411,24 @@ class WORDPROCESSING:
 
 		if correctFlag == True:
 			toCorrectWord = toCorrect_DICT[str(ARTag)]
-			print "toCorrect_DICT[str(ARTag)]"
-			print toCorrect_DICT[str(ARTag)]
+			#print "toCorrect_DICT[str(ARTag)]"
+			#print toCorrect_DICT[str(ARTag)]
 
 			if level == "TaskTHREE":
 
 				if [lineN, wordN] in toCorrectWord:
-					print [lineN, wordN]
-					print "[lineN, wordN]"
+					#print [lineN, wordN]
+					#print "[lineN, wordN]"
 					tag = "=RTag"
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=WTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
 					correctedWord.append([lineN, wordN])
-					print "correctedWord"
-					print correctedWord
+					#print "correctedWord"
+					#print correctedWord
 					self.stopAndAsk(eachWord)
 					skip = True
-					print "which level"
+					#print "which level"
 
 
 
@@ -437,30 +437,30 @@ class WORDPROCESSING:
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=WTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
-					print "three level"
+					#print "three level"
 
 				else:
 					tag = "=WTag"
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=RTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
-					print "three level"
+					#print "three level"
 
 			else: 
 
 				if [lineN, wordN] in toCorrectWord:
-					print [lineN, wordN]
-					print "[lineN, wordN]"
+					#print [lineN, wordN]
+					#print "[lineN, wordN]"
 					tag = "=RTag"
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=WTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
 					correctedWord.append([lineN, wordN])
-					print "correctedWord"
-					print correctedWord
+					#print "correctedWord"
+					#print correctedWord
 					#self.stopAndAsk(eachWord)
 					skip = True
-					print "which level"
+					#print "which level"
 
 
 
@@ -469,14 +469,14 @@ class WORDPROCESSING:
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=WTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
-					print "three level"
+					#print "three level"
 
 				else:
 					tag = "=WTag"
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=RTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
-					print "three level"
+					#print "three level"
 
 
 			print "I'm in True"
@@ -494,28 +494,28 @@ class WORDPROCESSING:
 
 			if breakPoint == [0, 0]:
 				toCorrectWord = toCorrect_DICT[str(ARTag)]
-				print "toCorrect_DICT[str(ARTag)]"
-				print toCorrect_DICT[str(ARTag)]
+				#print "toCorrect_DICT[str(ARTag)]"
+				#print toCorrect_DICT[str(ARTag)]
 			
-			print "[lineN, wordN]"
-			print [lineN, wordN]
-			print "toCorrectWord"
-			print toCorrectWord
+			#print "[lineN, wordN]"
+			#print [lineN, wordN]
+			#print "toCorrectWord"
+			#print toCorrectWord
 			if level == "TaskTHREE":
 
 				if [lineN, wordN] in toCorrectWord:
-					print [lineN, wordN]
-					print "[lineN, wordN]"
+					#print [lineN, wordN]
+					#print "[lineN, wordN]"
 					tag = "=RTag"
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=WTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
 					correctedWord.append([lineN, wordN])
-					print "correctedWord"
-					print correctedWord
+					#print "correctedWord"
+					#print correctedWord
 					self.stopAndAsk(eachWord)
 					skip = True
-					print "which level"
+					#print "which level"
 
 
 
@@ -524,14 +524,14 @@ class WORDPROCESSING:
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=WTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
-					print "three level"
+					#print "three level"
 
 				else:
 					tag = "=WTag"
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=RTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
-					print "three level"
+					#print "three level"
 			
 			else:
 
@@ -542,7 +542,7 @@ class WORDPROCESSING:
 					eachWord = self.removeTheTag(tag, eachWord)
 					tag = "=WTag"
 					eachWord = self.removeTheWordWithTag(tag, eachWord)
-					print "wrong level"
+					#print "wrong level"
 
 					
 
@@ -579,8 +579,8 @@ class WORDPROCESSING:
 			correctFlagReturn = False
 
 
-		print "correctedWord"
-		print correctedWord
+		#print "correctedWord"
+		#print correctedWord
 
 		self.corrected_DICT[str(ARTag)] = toCorrectWord
 		#if str(ARTag) in self.toCorrect_DICT:
@@ -594,19 +594,19 @@ class WORDPROCESSING:
 			#print "hello hello hello hello hello hello hello hello hello hello hello hello"
 			#toCorrectWord.remove(self.corrected_DICT[str(ARTag)])
 
-		print "self.corrected_DICT"
-		print self.corrected_DICT
-		print self.corrected_DICT[str(ARTag)] 
-		print "self.toCorrect_DICT"
-		print toCorrect_DICT
-		print toCorrect_DICT[str(ARTag)] 
+		#print "self.corrected_DICT"
+		#print self.corrected_DICT
+		#print self.corrected_DICT[str(ARTag)] 
+		#print "self.toCorrect_DICT"
+		#print toCorrect_DICT
+		#print toCorrect_DICT[str(ARTag)] 
 
 
 
 
 
-		print self.corrected_DICT
-		print toCorrect_DICT
+		#print self.corrected_DICT
+		#print toCorrect_DICT
 
 
 
@@ -620,26 +620,26 @@ class WORDPROCESSING:
 		if readOrNot ==1:
 			check1 = self.corrected_DICT[str(ARTag)]
 			if  check1 != []:
-				print "hereherehereherehereherehere"
-				print check1
+				#print "hereherehereherehereherehere"
+				#print check1
 				for i in check1: 
 					if i in toCorrect_DICT[str(ARTag)]:
-						print "finallyfinallyfinallyfinallyfinallyfinallyfinally"
+						#print "finallyfinallyfinallyfinallyfinallyfinallyfinally"
 						leftUnCorrected = toCorrect_DICT[str(ARTag)]
 						leftUnCorrected.remove(i)
-						print "leftUnCorrected"
-						print leftUnCorrected
+						#print "leftUnCorrected"
+						#print leftUnCorrected
 						toCorrect_DICT[str(ARTag)] = leftUnCorrected 
 						
 
 						if str(ARTag) in trash_DICT:
 
 							trash_DICT[str(ARTag)].extend(self.corrected_DICT[str(ARTag)])
-							print "NotrashNotrashNotrashNotrashNotrashNotrashNotrash"
+							#print "NotrashNotrashNotrashNotrashNotrashNotrashNotrash"
 						else:
 
 							trash_DICT[str(ARTag)] = self.corrected_DICT[str(ARTag)]
-							print "trashtrashtrashtrashtrashtrashtrash"
+							#print "trashtrashtrashtrashtrashtrashtrash"
 
 
 	def stopAndAsk(self, eachWord):
@@ -647,32 +647,38 @@ class WORDPROCESSING:
 		self.story.say("\\rspd=90\\ Can you read this word for me? ")
 
 		readCorrectly = False
+		n = 0
 
 		while ( readCorrectly != True):
 
 			self.waitAndRecord.recordTheOutput('new.wav')
 			response = self.waitAndRecord.transcribeTheOutput()
-			print response
+			#print response
 
-			if response != {}:
-				reWord = response["results"][0]["alternatives"][0]["transcript"]
-				reConf = response["results"][0]["alternatives"][0]["confidence"]
+			if True:
+				repeatWord = '\\rspd=80\\ Oh that is how you read'
+				time.sleep(1)
+				self.story.say(repeatWord)
+				readCorrectly = True
+
+			"""if response != {}:
+				#reWord = response["results"][0]["alternatives"][0]["transcript"]
+				#reConf = response["results"][0]["alternatives"][0]["confidence"]
 
 
-				if reConf > 0.4 and ''.join(sorted(reWord.lower())).strip() == ''.join(sorted(eachWord.lower())).strip():
-					repeatWord = '\\rspd=80\\ Oh that is how you read'
-					time.sleep(1)
-					self.story.say(repeatWord)
-					readCorrectly = True
-					print reConf, reWord, eachWord
+				#if reConf > 0.4 and ''.join(sorted(reWord.lower())).strip() == ''.join(sorted(eachWord.lower())).strip():
+
+					#print reConf, reWord, eachWord
 
 				else:
 					self.story.say("\\rspd=90\\ Sorry I didn't understand, can you read it again? ")
-					print reConf, reWord, eachWord
+					n = 1
+					#print reConf, reWord, eachWord
 
 			elif response == {}:
+					n = 1
 					self.story.say("\\rspd=90\\ Sorry I didn't understand, can you read it again? ")
-					#print reConf, reWord, eachWord
+					#print reConf, reWord, eachWord"""
 
 
 

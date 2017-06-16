@@ -95,14 +95,14 @@ class logger():
 
     def robot_state_callback(self, data):
         timestamp = self.getTime()
-        lookAt = "Robot State: " + data.data        
+        lookAt = "Robot State: " + ',' + data.data        
         with open(self.filePath, 'a') as csvfile:
             wr = csv.writer(csvfile, delimiter=' ', quoting=csv.QUOTE_MINIMAL)
             wr.writerow([timestamp, lookAt])
         
     def current_word_callback(self, data):
         timestamp = self.getTime()
-        smile = "Current Word: "  + data.data         
+        smile = "Current Word: "  + ',' + data.data         
         with open(self.filePath, 'a') as csvfile:
             wr = csv.writer(csvfile, delimiter=' ', quoting=csv.QUOTE_MINIMAL)
             wr.writerow([timestamp, smile])

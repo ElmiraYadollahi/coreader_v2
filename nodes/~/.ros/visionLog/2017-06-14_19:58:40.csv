@@ -1,0 +1,38 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-N-E-W- -S-E-S-S-I-O-N-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+"2017-06-14 19:58:41:874984" "Robot State: ,Introduce Nao Started"
+"2017-06-14 19:58:44:947728" "Robot State: ,Introduce Nao Ended"
+"2017-06-14 19:58:46:477867" "Robot State: ,Looking at The Book"
+"2017-06-14 19:58:54:536608" "Robot State: ,TaskONE Selected"
+"2017-06-14 19:58:55:561140" "Robot State: ,Looking at The Book"
+"2017-06-14 19:59:00:146574" "Robot State: ,Reading Mode Started"
+"2017-06-14 19:59:04:981691" "Position: x: 0.209546893835
+y: 0.103525526822
+z: 0.262985169888
+x: 0.0186227355152
+y: 0.254464119673
+z: -0.0394631363451
+w: 1.0"
+"2017-06-14 19:59:04:982546" "Current Word: ,\rspd=70\  the boy"
+"2017-06-14 19:59:06:619374" "Position: x: 0.214330673218
+y: 0.0938624963164
+z: 0.279240310192
+x: 0.0149103067815
+y: 0.176698371768
+z: -0.0812005773187
+w: 1.0"
+"2017-06-14 19:59:06:620122" "Current Word: ,\rspd=70\ said"
+"2017-06-14 19:59:08:200041" "Position: x: 0.212718874216
+y: 0.083215393126
+z: 0.273648738861
+x: 0.00349216465838
+y: 0.20204885304
+z: -0.129351690412
+w: 1.0"
+"2017-06-14 19:59:08:201132" "Current Word: ,\rspd=70\ goodbye "
+"2017-06-14 19:59:09:618028" "Robot State: ,Looking at The Book"
+"2017-06-14 19:59:13:636139" "Robot State: ,Looking at The Book"
+"2017-06-14 19:59:44:229470" "Detected Cards: GREEN Card Detected"
+"2017-06-14 19:59:45:675706" "Robot State: ,Looking at The Book"
+"2017-06-14 19:59:46:181554" "Robot State: ,Reaction Mode Started"
+"2017-06-14 19:59:55:754648" "Robot State: ,Looking at The Book"
+"2017-06-14 19:59:56:305984" "Robot State: ,Reaction Mode Ended"

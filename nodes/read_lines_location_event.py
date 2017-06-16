@@ -147,6 +147,16 @@ pairs_dict = {	'[0, 1]' : False,
 				'[220, 221, 222, 223]' : False,
 				'[220, 221]' : False,
 				'[ 222, 223]' : False,
+				'[224, 225]' : False,
+				'[226, 227, 228, 229]' : False,
+				'[226, 227]' : False,
+				'[ 228, 229]' : False,
+				'[230, 231, 232, 233]' : False,
+				'[230, 231]' : False,
+				'[ 232, 233]' : False,
+				'[234, 235, 236, 237]' : False,
+				'[234, 235]' : False,
+				'[ 236, 237]' : False,
 				
 				'[256, 257]' : False,
 				'[258, 259]' : False,
@@ -176,6 +186,7 @@ taskLevel_dict ={	'CurrLevel'		: "TaskNONE",
 					'LevelONE'		: 1,
 					'LevelTWO'		: 1,
 					'LevelTHREE'	: 1,
+					'LevelTHREE'	: 0,
 				}
 
 
@@ -263,6 +274,10 @@ global REDCardAllert
 REDCardAllert = False
 global NumOfGreenCard
 NumOfGreenCard = 0
+global effector
+effector = "LArm"
+global once
+once = 0
 
 class MOTION_ANIMATION_SELECTION:
 	def __init__(self):
@@ -340,45 +355,45 @@ class MOTION_ANIMATION_SELECTION:
 		if motionProxyNum == 1:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
-			wordsBefore = "\\rspd=80\\ Yeaaah!!!"
+			wordsBefore = "\\rspd=80\\ awesome!!! Thank you"
 			sleepTime = 1
-			wordsAfter = "\\rspd=70\\ Thank you"
+			wordsAfter = "\\rspd=70\\ "
 			reactToTheMistake(emotion, animations.winner_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 
 		if motionProxyNum == 2:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
-			wordsBefore = "\\rspd=60\\ Yeaaah!!!"		
+			wordsBefore = "\\rspd=60\\ Yeaaah!!! this is great"		
 			sleepTime = 1
-			wordsAfter = "\\rspd=80\\ this is great"
+			wordsAfter = "\\rspd=80\\ "
 			reactToTheMistake(emotion, animations.winner2_seated_pose, wordsBefore, wordsAfter, sleepTime, 1.0)
 
 		if motionProxyNum == 3:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
-			wordsBefore = "\\rspd=80\\ Yeaaah!!!"		
+			wordsBefore = "\\rspd=80\\ Yeaaah!!! I'm getting better"		
 			sleepTime = 1
-			wordsAfter = "\\rspd=80\\ I made it "
+			wordsAfter = "\\rspd=80\\  "
 			reactToTheMistake2(animations.relieved_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 
 		if motionProxyNum == 4:
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
-			wordsBefore = "\\rspd=80\\ Wow!!!"		
+			wordsBefore = "\\rspd=80\\ Wow!!!  I was right"		
 			sleepTime = 1
-			wordsAfter = "\\rspd=80\\ I was right"
+			wordsAfter = "\\rspd=80\\ "
 			reactToTheMistake(emotion, animations.proud_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.9)
 
 		if motionProxyNum == 5:
-			wordsBefore = "\\rspd=80\\ Yeaaah!!!"		
+			wordsBefore = "\\rspd=80\\ Yeaaah!!! I read it correctly"		
 			sleepTime = 1
-			wordsAfter = "\\rspd=80\\ I read it correctly"
+			wordsAfter = "\\rspd=80\\ "
 			reactToTheMistake(emotion, animations.happy_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 
 		if motionProxyNum == 6:
-			wordsBefore = "\\rspd=70\\ I'm so happy !!!"		
+			wordsBefore = "\\rspd=70\\ I'm so happy,  I was right!!!"		
 			sleepTime = 1
-			wordsAfter = "\\rspd=70\\ I was right"
+			wordsAfter = "\\rspd=70\\ "
 			reactToTheMistake(emotion, animations.happy2_seated_pose, wordsBefore, wordsAfter, sleepTime, 0.8)
 			pitch_angle = 0.0
 			LookAtTheBook(pitch_angle)
@@ -494,8 +509,15 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 	global breakPoint
 	global robot_hand_pose_pub
 	useSensorValues = True
+	hand = True
+
+	if(effector == "LArm"):
+		whichHand = "LHand"
+	else:
+		whichHand = "RHand"
 
 	for j in range(len(ARTag)):
+		print "jjjj"
 		print j 
 		wordProc = WORDPROCESSING(story, ARTag[j], taskLevel_dict, proxy)
 
@@ -600,10 +622,9 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 						if REDCardAllert == True:
 							break
 				
-						tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
-						tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
-				
-						#print result
+						if hand == True:
+							tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
+							tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
 
 						if j == 0:
 							#wordProc.readFromWordMatrix(correctPermission, j, i+1, REDCardAllert)
@@ -617,7 +638,7 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 								break
 						if (j ) %4 == 0:
 
-							result          = motionProxy.getPosition("RHand", frame, useSensorValues)
+							result          = motionProxy.getPosition(whichHand, frame, useSensorValues)
 							handPose = changeToPose(result)
 							#print handPose
 							robot_hand_pose_pub.publish(handPose)		
@@ -632,7 +653,7 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 							#if j/4 == (hardWord-1):
 								#stopAndAsk()
 								#time.sleep(2)
-							time.sleep(0.4)
+							time.sleep(0.2)
 			elif readOrNot == 0:
 				animationSelection = MOTION_ANIMATION_SELECTION()
 				animationSelection.reactionToSpecificTags()
@@ -674,9 +695,11 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 					if REDCardAllert == True:
 						break
 			
-					tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
-					tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
-					result          = motionProxy.getPosition("RHand", frame, useSensorValues)
+					if hand == True:
+						tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
+						tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
+
+					result          = motionProxy.getPosition(whichHand, frame, useSensorValues)
 					#robot_hand_pose_pub.publish(result)		
 					print result
 					handPose = changeToPose(result)
@@ -748,9 +771,11 @@ def calculateWhereToPointAt(pointsAB, effector, frame, changeCoordinate):
 						if REDCardAllert == True:
 							break
 
-						tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
-						tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
-						result          = motionProxy.getPosition("RHand", frame, useSensorValues)
+						if hand == True:
+							tracker.lookAt(trajComplete2[i][0][j], frame, maxSpeed, useWholeBody)
+							tracker.pointAt(effector, trajComplete2[i][0][j], frame, maxSpeedHead)
+
+						result          = motionProxy.getPosition(whichHand, frame, useSensorValues)
 						print result
 						#robot_hand_pose_pub.publish(result)		
 						print result
@@ -907,21 +932,27 @@ def getTagLocations(msg):
 	moveHand += 1
 	cameraName = 'CameraBottom'
 	global whichPage
-	whichPage = "Left"
+	#whichPage = "Left"
 
 
 
 	if moveHand == 1:
+		#whichPage == "Left"
+		k = 0
+		if whichPage == "Left":
+			k = 0
+			effector = "LArm"
+
+		elif whichPage == "Right":
+			k = 2
+			effector = "RArm"
+
 
 		if(effector == "LArm"):
 			motionProxy.openHand("LHand")
 		else:
 			motionProxy.openHand("RHand")
 
-		if whichPage == "Left":
-			k = 0
-		elif whichPage == "Right":
-			k = 2
 
 		
 		P1 = []
@@ -1020,18 +1051,24 @@ def tagDetection(msg):
 	global NumOfGreenCard
 	global ARRec
 	global robot_state_pub
+	global once
+	#global effector
 	animationSelection = MOTION_ANIMATION_SELECTION()
 	
 	# initializing classes
 
 	taskSelection()
+	if taskLevel_dict['CurrLevel'] == "TaskFINISH":
+		once += 1
+		GoToFinishLine(once)
+		
 	cameraName = 'CameraBottom'
 
 	#if taskLevel_dict['CurrLevel'] == "TaskFINISH":
 		#break
 
 	# Tilt the roobot's head to the front
-	pitch_angle = 0.2
+	pitch_angle = 0.3
 	global counter
 	if counter == 0:
 		yaw_angle = 0.3
@@ -1049,6 +1086,7 @@ def tagDetection(msg):
 		tagNum = 2
 		RecTag = msg.data
 		tagLeft = msg.data
+		whichPage = "Left"
 
 
 	elif len(foundAR) == 4:
@@ -1063,11 +1101,13 @@ def tagDetection(msg):
 			RecTag = tagRight
 			whichPage = "Right"
 			pairs_dict[ARRec] = "Right"
+			#effector == "RArm"
 		else:
 			RecTag = tagLeft
 			whichPage = "Left"
 			pairs_dict[ARRec] = "Left"
 			delaytime += 1
+			#effector == "LArm"
 			print "I'm in left "
 		#print delaytime
 
@@ -1106,7 +1146,8 @@ def tagDetection(msg):
 
 	rospy.Subscriber('card_id_state', String, cardDetection, RecTag)
 	print pairs_dict[RecTag]
-	print pairs_dict[ARRec] 
+	print pairs_dict[ARRec]
+	print effector 
 	#print pairs_dict
 	#print reactionPermission
 
@@ -1364,7 +1405,7 @@ def reactToBoredness(emotion, pose, pause, wordsAfter , factorSpeed = 1.0):
 	#if wordsAfter != None:
 	story.say(wordsAfter)
 	#blinkThread.start()
-	#motionProxy.setBreathEnabled('Head', True)
+	#motionProxy.setBreathEnabled('Head', True)calculateWhereToPointAt
 	#postureProxy.goToPosture("Stand", 1.0)
 	#readTheTaggedStory(selectedStory, correctFlag)
 	#readTheTaggedStoryWithLevel(selectedStory, correctFlag)
@@ -1494,20 +1535,20 @@ skip = 0
 def idleMovementModeON(mode):
 	global skip
 	global idleThread
-	idleThread = threading.Timer(35, idleMovementModeON, [mode])
-	animationSelection = MOTION_ANIMATION_SELECTION()
-	idleThread.start()
+	#idleThread = threading.Timer(45, idleMovementModeON, [mode])
+	#animationSelection = MOTION_ANIMATION_SELECTION()
+	#idleThread.start()
 	skip += 1
 	#print k
-	if mode == "ON":		
+	#if mode == "ON":		
 		#emotionReaction.blink_eyes()
-		if skip >= 2:
-			global robot_state_pub
-			robot_state_pub.publish("Idle Mode Reaction Started") 
-			motionProxy.setBreathEnabled('Arms', False)
-			animationSelection.reactionIdleMovement()
-			motionProxy.setBreathEnabled('Arms', True)
-			robot_state_pub.publish("Idle Mode Reaction Ended") 
+		#if skip >= 2:
+			#global robot_state_pub
+			#robot_state_pub.publish("Idle Mode Reaction Started") 
+			#motionProxy.setBreathEnabled('Arms', False)
+			#animationSelection.reactionIdleMovement()
+			#motionProxy.setBreathEnabled('Arms', True)
+			#robot_state_pub.publish("Idle Mode Reaction Ended") 
 		
 
 
@@ -1515,7 +1556,7 @@ def idleMovementModeOFF():
 	global idleThread
 	global skip
 	#emotionReaction.turn_off_eye()
-	idleThread.cancel()
+	#idleThread.cancel()
 	skip = 0 
 
 
@@ -1579,7 +1620,7 @@ def LookAtTheBook(pitch_angle, yaw_angle=0):
 	"""
 
 	motionProxy.setStiffnesses("Head", 1.0)
-
+	pitch_angle = 0.2
 	# Example showing how to set angles, using a fraction of max speed
 	isAbsolute = True
 	names  = ["HeadYaw", "HeadPitch"]
@@ -1623,7 +1664,7 @@ def IntroduceNao():
 
 
 	story.setLanguage('English')
-	"""story.say("\\rspd=90\\ Hello \\pau=500\\ My name is nao \\pau=500\\ I really like reading short stories")
+	story.say("\\rspd=90\\ Hello Jean \\pau=700\\ My name is Nao \\pau=500\\ I really like reading short stories")
 	story.say("\\rspd=90\\ Do you want to listen to them?")
 	story.say("\\rspd=90\\ sometimes I make mistakes, can you help me to correct them?")
 	time.sleep(0.1)
@@ -1631,7 +1672,7 @@ def IntroduceNao():
 	story.say("\\rspd=90\\ and don't forget the red, green and yellow card")
 	story.say("\\rspd=90\\ \\pau=50\\ you can show me the red card if I make a mistake")
 	story.say("\\rspd=90\\ \\pau=50\\ the green card when I'm correct")
-	story.say("\\rspd=90\\ \\pau=50\\ and the yellow one, when you want me to repeat")"""
+	story.say("\\rspd=90\\ \\pau=50\\ and the yellow one, when you want me to repeat")
 	#story.say("\\rspd=90\\ Hello")
 	pitch_angle = 0.2
 	#LookAtTheBook(pitch_angle)
@@ -1660,10 +1701,10 @@ def taskSelection():
 		if taskLevel_dict['PrevLevel'] == "TaskNONE":
 			taskLevel_dict['CurrLevel'] = "TaskONE"
 
-		elif taskLevel_dict['PrevLevel'] == "TaskONE":
-			taskLevel_dict['CurrLevel'] = "TaskTWO"
+		#elif taskLevel_dict['PrevLevel'] == "TaskONE":
+			#taskLevel_dict['CurrLevel'] = "TaskTWO"
 
-		elif taskLevel_dict['PrevLevel'] == "TaskTWO":
+		elif taskLevel_dict['PrevLevel'] == "TaskONE":
 			taskLevel_dict['CurrLevel'] = "TaskTHREE"
 
 		elif taskLevel_dict['PrevLevel'] == "TaskTHREE":
@@ -1681,6 +1722,24 @@ def TurnOffCoReader():
 	motionProxy.setBreathEnabled('Body', False)
 	motionProxy.setBreathEnabled('Arms', False)
 	motionProxy.killAll()
+
+def GoToFinishLine(once):
+
+	if once == 1:
+		facesize = 0.1
+		faceTrackingStarted(facesize)
+		global robot_state_pub
+		robot_state_pub.publish( taskLevel_dict['CurrLevel'] + " Selected")
+
+		idleMovementModeOFF()
+		
+		
+		story.setLanguage('English')
+		story.say("\\rspd=80\\ I feel so tired")
+		story.say("\\rspd=80\\ why don't you read the rest of the book for me?")
+		story.say("\\rspd=80\\ I want to listen to you")
+		story.say("\\rspd=80\\ I will be quiet and just look at you, reading the book")
+
 
 
 def main():
@@ -1761,9 +1820,9 @@ def main():
 	pitch_angle = 0.3
 	yaw_angle = 0.8
 	LookAtTheBook(pitch_angle)
+	#taskSelection()
 	
-	global effector
-	effector = "LArm"
+
 
 	"""waitAndRecord = RECORDANDTRANSCRIBE()
 	waitAndRecord.recordTheOutput('new.wav')
@@ -1777,6 +1836,8 @@ def main():
 
 	print reConf
 	print reWord"""
+
+
 
 	rospy.Subscriber('tag_id_state', String, tagDetection)
 

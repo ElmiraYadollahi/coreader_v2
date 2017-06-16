@@ -1,0 +1,301 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-N-E-W- -S-E-S-S-I-O-N-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+"2017-06-15 09:52:01:213886" "Robot State: ,Introduce Nao Started"
+"2017-06-15 09:52:34:864305" "Robot State: ,Introduce Nao Ended"
+"2017-06-15 09:52:36:317745" "Robot State: ,Looking at The Book"
+"2017-06-15 09:52:36:920952" "Robot State: ,TaskONE Selected"
+"2017-06-15 09:52:37:937687" "Robot State: ,Looking at The Book"
+"2017-06-15 09:52:40:056783" "Robot State: ,Reading Mode Started"
+"2017-06-15 09:52:44:482137" "Position: x: 0.200880035758
+y: 0.0958598703146
+z: 0.23949919641
+x: 0.0148451840505
+y: 0.368195414543
+z: -0.0789132341743
+w: 1.0"
+"2017-06-15 09:52:44:482779" "Current Word: ,\rspd=70\  HEY!		"
+"2017-06-15 09:52:45:200633" "Position: x: 0.201976910233
+y: 0.109708160162
+z: 0.24403770268
+x: 0.0102090407163
+y: 0.347955912352
+z: -0.00709485402331
+w: 1.0"
+"2017-06-15 09:52:45:201445" "Current Word: ,\rspd=70\  do you"
+"2017-06-15 09:52:46:781398" "Current Word: ,\rspd=70\ like"
+"2017-06-15 09:52:46:781664" "Position: x: 0.204356119037
+y: 0.109137028456
+z: 0.249953836203
+x: 0.00532658724114
+y: 0.318581432104
+z: -0.00937050208449
+w: 1.0"
+"2017-06-15 09:52:48:360152" "Position: x: 0.205388456583
+y: 0.0971208885312
+z: 0.25086209178
+x: -0.00123771687504
+y: 0.312473475933
+z: -0.0673275515437
+w: 1.0"
+"2017-06-15 09:52:48:360642" "Current Word: ,\rspd=70\ to know"
+"2017-06-15 09:52:49:965295" "Position: x: 0.206107676029
+y: 0.0848834365606
+z: 0.252864450216
+x: 8.37035477161e-05
+y: 0.300884693861
+z: -0.126926094294
+w: 1.0"
+"2017-06-15 09:52:49:967186" "Current Word: ,\rspd=70\ a"
+"2017-06-15 09:52:51:542071" "Position: x: 0.206168413162
+y: 0.0735850706697
+z: 0.254749596119
+x: 0.00624373881146
+y: 0.290465801954
+z: -0.180992931128
+w: 1.0"
+"2017-06-15 09:52:51:542613" "Current Word: ,\rspd=70\ secret?		"
+"2017-06-15 09:52:52:721742" "Current Word: ,\rspd=70\ well"
+"2017-06-15 09:52:52:721913" "Position: x: 0.19544865191
+y: 0.111287645996
+z: 0.231927216053
+x: 0.0094027640298
+y: 0.409373044968
+z: 0.00104215252213
+w: 1.0"
+"2017-06-15 09:52:54:341384" "Position: x: 0.1982011199
+y: 0.109950482845
+z: 0.237309545279
+x: 0.00536882178858
+y: 0.382061004639
+z: -0.00426851958036
+w: 1.0"
+"2017-06-15 09:52:54:342013" "Current Word: ,\rspd=70\ everyone"
+"2017-06-15 09:52:55:963605" "Current Word: ,\rspd=70\ thinks"
+"2017-06-15 09:52:55:963259" "Position: x: 0.199249431491
+y: 0.0964801236987
+z: 0.23765027523
+x: 0.00343412859365
+y: 0.377861946821
+z: -0.072027310729
+w: 1.0"
+"2017-06-15 09:52:57:561371" "Current Word: ,\rspd=70\ I am"
+"2017-06-15 09:52:57:561651" "Position: x: 0.200723111629
+y: 0.0842633545399
+z: 0.240728750825
+x: 0.00630744732916
+y: 0.360336720943
+z: -0.132642894983
+w: 1.0"
+"2017-06-15 09:52:59:142219" "Current Word: ,\rspd=70\ only			"
+"2017-06-15 09:52:59:141915" "Position: x: 0.201037019491
+y: 0.0731681659818
+z: 0.242473423481
+x: 0.00943179149181
+y: 0.34962657094
+z: -0.188177391887
+w: 1.0"
+"2017-06-15 09:53:00:425434" "Position: x: 0.188239425421
+y: 0.11433621496
+z: 0.219268843532
+x: 0.00492961099371
+y: 0.476377367973
+z: 0.0185026861727
+w: 1.0"
+"2017-06-15 09:53:00:425943" "Current Word: ,\rspd=70\  big"
+"2017-06-15 09:53:01:720010" "Position: x: 0.191605687141
+y: 0.115734212101
+z: 0.22580820322
+x: 0.00542359240353
+y: 0.442438364029
+z: 0.0261443909258
+w: 1.0"
+"2017-06-15 09:53:01:720763" "Current Word: ,\rspd=70\ and"
+"2017-06-15 09:53:03:019342" "Position: x: 0.193093031645
+y: 0.10633880645
+z: 0.226360052824
+x: 0.00217306334525
+y: 0.437223851681
+z: -0.0235227141529
+w: 1.0"
+"2017-06-15 09:53:03:020586" "Current Word: ,\rspd=70\ cute"
+"2017-06-15 09:53:03:416196" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:04:320801" "Current Word: ,\rspd=70\ but"
+"2017-06-15 09:53:04:321077" "Position: x: 0.193824708462
+y: 0.0955461934209
+z: 0.226474910975
+x: 0.00177973229438
+y: 0.4343354702
+z: -0.079350233078
+w: 1.0"
+"2017-06-15 09:53:05:601599" "Position: x: 0.195077359676
+y: 0.0873579978943
+z: 0.228661686182
+x: 0.00550379417837
+y: 0.421302109957
+z: -0.121263705194
+w: 1.0"
+"2017-06-15 09:53:05:602201" "Current Word: ,\rspd=70\ really"
+"2017-06-15 09:53:06:889810" "Current Word: ,\rspd=70\ I am"
+"2017-06-15 09:53:06:890055" "Position: x: 0.195618540049
+y: 0.0787897408009
+z: 0.230361819267
+x: 0.0113006792963
+y: 0.411145299673
+z: -0.164220169187
+w: 1.0"
+"2017-06-15 09:53:08:178800" "Position: x: 0.19578140974
+y: 0.0699711069465
+z: 0.231933072209
+x: 0.0116510055959
+y: 0.401349723339
+z: -0.208995059133
+w: 1.0"
+"2017-06-15 09:53:08:180124" "Current Word: ,\rspd=70\ the 		"
+"2017-06-15 09:53:09:460535" "Position: x: 0.180554568768
+y: 0.112109012902
+z: 0.206663370132
+x: 0.00978871993721
+y: 0.544319152832
+z: 0.00664978753775
+w: 1.0"
+"2017-06-15 09:53:09:461500" "Current Word: ,\rspd=70\ bravest"
+"2017-06-15 09:53:11:083503" "Position: x: 0.185021877289
+y: 0.108532525599
+z: 0.212902456522
+x: -7.84476287663e-05
+y: 0.509336829185
+z: -0.0117005212232
+w: 1.0"
+"2017-06-15 09:53:11:084414" "Current Word: ,\rspd=70\  human"
+"2017-06-15 09:53:12:700412" "Current Word: ,\rspd=70\ there"
+"2017-06-15 09:53:12:700098" "Position: x: 0.187326148152
+y: 0.0965808779001
+z: 0.215153038502
+x: 0.0109356176108
+y: 0.494104921818
+z: -0.0764610916376
+w: 1.0"
+"2017-06-15 09:53:14:325826" "Current Word: ,\rspd=70\ ever"
+"2017-06-15 09:53:14:326033" "Position: x: 0.189005494118
+y: 0.0841401666403
+z: 0.217758730054
+x: 0.0143094332889
+y: 0.477242797613
+z: -0.141830161214
+w: 1.0"
+"2017-06-15 09:53:15:941104" "Position: x: 0.189327567816
+y: 0.0731284469366
+z: 0.219528228045
+x: 0.0183731708676
+y: 0.465230435133
+z: -0.199779644608
+w: 1.0"
+"2017-06-15 09:53:15:941956" "Current Word: ,\rspd=70\ was "
+"2017-06-15 09:53:17:377511" "Robot State: ,Looking at The Book"
+"2017-06-15 09:53:21:156156" "Robot State: ,Looking at The Book"
+"2017-06-15 09:53:23:019989" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:24:026652" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:24:115529" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:24:118602" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:24:216184" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:24:322094" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:24:417946" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:24:523449" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:24:621902" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:24:626545" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:24:717709" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:24:823058" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:24:922215" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:24:926189" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:25:019636" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:30:812050" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:31:822779" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:31:827742" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:31:910803" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:31:912405" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:022733" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:027078" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:124614" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:127826" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:222961" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:227333" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:317303" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:319419" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:421155" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:426563" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:619541" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:625000" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:720677" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:722912" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:817513" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:821563" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:32:920912" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:32:924661" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:33:913469" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:36:529858" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:36:626298" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:36:628839" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:36:718575" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:36:824640" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:36:922326" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:36:927216" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:022587" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:025268" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:122533" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:127225" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:217930" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:221120" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:321224" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:325952" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:422528" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:427816" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:516417" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:519593" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:625786" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:825707" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:830586" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:37:920754" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:37:923271" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:021487" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:38:024204" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:126340" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:38:129469" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:222115" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:38:227650" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:315873" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:38:319255" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:422713" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:38:425611" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:521744" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:38:524636" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:630260" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:38:724628" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:38:919054" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:021404" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:121469" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:126217" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:222106" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:227639" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:316189" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:319311" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:422430" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:425348" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:524698" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:615472" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:718885" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:722553" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:822412" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:826874" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:39:921589" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:39:925929" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:40:014064" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:40:014208" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:40:114967" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:40:117362" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:40:212192" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:40:324181" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:41:222987" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:41:312523" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:42:025359" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:42:719733" "Detected Cards: RED Card Detected"
+"2017-06-15 09:53:46:819058" "Detected Cards: YELLOW Card Detected"
+"2017-06-15 09:53:46:918066" "Detected Cards: RED Card Detected"

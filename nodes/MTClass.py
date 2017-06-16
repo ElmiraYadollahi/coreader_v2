@@ -160,7 +160,7 @@ class TRANSFORMATION:
 			dy = (mainPoints[0][1] - mainPoints[1][1])/2
 
 		if effector == "LArm":
-			dy_corr = -0.03
+			dy_corr = -0.04
 		else:
 			dy_corr = 0.03
 
@@ -185,7 +185,7 @@ class TRANSFORMATION:
 				trajMidP = []
 				trajMidP.append(trajMainP[0])
 				trajMidP.append(trajMainP[1] - dy)
-				trajMidP.append(trajMainP[2] + 4 * dy)
+				trajMidP.append(trajMainP[2] + 6 * dy)
 
 				trajComplete.append(trajMidP)
 

@@ -9,57 +9,56 @@
 [10, 11]	1=LineNum 1=Skip 1=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
 
-[12, 13]	5=LineNum 0=Skip 1=Read 13=L1 13=B1 0N=S1	8=L2 8=B2 2N=S2 8=L3 8=B3 4N=S3 4=L4 4=B4 6N=S4	4=L5 4=B5 8N=S5				1=NextLine  HEY!		2=NextLine  do you , like , to know , a , secret 		3=NextLine well , everyone , thinks , I am , only			4=NextLine small , and , cute=RTag mute=WTag , but , really , I am , the 		5=NextLine bravest , animal=RTag human=WTag , there , ever , was 
+[12, 13]	5=LineNum 0=Skip 1=Read 13=L1 13=B1 0N=S1	8=L2 8=B2 2N=S2 8=L3 8=B3 4N=S3 4=L4 4=B4 6N=S4	4=L5 4=B5 8N=S5				1=NextLine  HEY!		2=NextLine  would you , like , to know , a , secret?		3=NextLine well , everyone , thinks , I am , only			4=NextLine small=RTag big=WTag , and , cute , but , really , I am , the 		5=NextLine bravest , animal=RTag human=WTag , there , ever , was 
 
 
-[ 14, 15]	1=LineNum 0=Skip 1=Read 1=L1 1=B1	0N=S1					1=NextLine  No one , is , as , brave=RTag great=WTag , as , me , and , nothing=RTag everything=WTag , scares , me , you'll , see
+
+[ 14, 15]	1=LineNum 0=Skip 1=Read 1=L1 1=B1	0N=S1					1=NextLine  No one , is , as , brave=RTag stupid=WTag , as , me , and , nothing , scares , me , you'll , see
 
 
 [16, 17]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
 
-[18, 19]	3=LineNum 0=Skip 1=Read 2=L1 2=B1 0N=S1 7=L2 7=B2 0N=S2 10=L3 10=B3 0N=S3			1=NextLine  HOOT , HOOT		2=NextLine  Don't , listen , to , that , tiny , little , mouse=RTag rat=WTag			3=NextLine  I am , the , wisest=RTag widest=WTag , and , bravest , bird , in , the , skies.
+[18, 19]	3=LineNum 0=Skip 1=Read 2=L1 2=B1 0N=S1 7=L2 7=B2 3N=S2 10=L3 10=B3 5N=S3			1=NextLine  HOOT , HOOT		2=NextLine  Don't , listen , to , that , tiny , little , mouse=RTag rabbit=WTag 			3=NextLine  I am , the , wisest , and , bravest , bird=RTag snake=WTag , in , the , skies.
 
 
 [ 20, 21]	1=LineNum 0=Skip 1=Read 11=L1 11=B1 0N=S1					1=NextLine  Bravery , is , my , middle=RTag last=WTag , name , and , nothing , scares , me , you'll , see 
-It is surprising 
+
 
 [22, 23]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
 
-[24, 25]	4=LineNum 0=Skip 1=Read 2=L1 2=B1 0N=S1 8=L2 8=B2 3N=S2 8=L3 8=B3 5N=S3 4=L4 4=B4 7N=S4	1=NextLine  HEE , HEE!		2=NextLine  That , silly, , old , owl , didn't , see , me , coming!		3=NextLine  My , dad=RTag mom=WTag , says , I am , definitely , the , funniest=RTag meanest=WTag		4=NextLine  and , bravest , animal , around
+[24, 25]	4=LineNum 0=Skip 1=Read 2=L1 2=B1 0N=S1 8=L2 8=B2 3N=S2 8=L3 8=B3 5N=S3 4=L4 4=B4 7N=S4		1=NextLine  HEE , HEE!		2=NextLine  That , silly, , old=RTag young=WTag , owl , didn't , see , me , coming!		3=NextLine  My , dad , says , I am , definitely , the , funniest=RTag prettiest=WTag 		4=NextLine  and , bravest , animal , around
 
 
-[ 26, 27]	1=LineNum 0=Skip 1=Read 8=L1 8=B1	0N=S1					1=NextLine Nothing=RTag everything=WTag , scares , the , king , of , mischief , you'll , see!
+[ 26, 27]	1=LineNum 0=Skip 1=Read 8=L1 8=B1	0N=S1					1=NextLine Nothing , scares , the , king=RTag queen=WTag , of , mischief , you'll , see!
 
 
 [28, 29]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
 
+[30, 31]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine  POOF!		2=NextLine  That , goofy , monkey=RTag giraffe=WTag , was , gone , in , a		3=NextLine  snippety  snap! , Danger , is , my , middle , name 		4=NextLine  and , I am , the , bravest=RTag funniest=WTag , animal , around here.
 
-[30, 31]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine  PEEFFk!		2=NextLine  That , goofy , monkey , was , gone , in , a		3=NextLine  snippety  snap! , Danger , is , my , middle , name 		4=NextLine  and , I , am , the , bravest , animal , around here.
 
-
-[ 32, 33]	1=LineNum 0=Skip 1=Read 10=L1 10=B1 0N=S1					1=NextLine  With , teeth , as , sharp=RTag clear=WTag , as these , nothing , scares , me , you'll , see!
+[ 32, 33]	1=LineNum 0=Skip 1=Read 10=L1 10=B1 0N=S1					1=NextLine  With , teeth=RTag head=WTag , as sharp as , these , nothing , scares , me , you'll , see!
 
 
 [34, 35]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
 
-[36, 37]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 5P=S1 7=L2 7=B2 2P=S2 9=L3 9=B3 0N=S3 		1=NextLine  RAWWWRRRR!		2=NextLine  That , crocodile , obviously , forgot=RTag forgive=WTag , that , I am		2=NextLine , the , strongest=RTag cruelest=WTag , and , bravest , animal , in , all , the , land
+[36, 37]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 5P=S1 7=L2 7=B2 2P=S2 9=L3 9=B3 0N=S3 		1=NextLine  RAWWWRRRR!		2=NextLine That , crocodile=RTag frog=WTag , obviously , forgot , that , I am		2=NextLine , the , strongest , and , bravest , animal , in , all , the , land=RTag skies=WTag
 
 
-[ 48, 49]	1=LineNum 0=Skip 1=Read 10=L1 10=B1 0N=S1					1=NextLine  I know , no , fear=RTag tear=WTag , and , nothing , scares , me , you'll , see!
+[ 48, 49]	1=LineNum 0=Skip 1=Read 10=L1 10=B1 0N=S1					1=NextLine  I know , no , fear=RTag food=WTag , and , nothing , scares , me , you'll , see
 
 
 [41, 46]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
 
 
-[42, 43]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 10=L2 10=B2 0N=S2 11=L3 11=B3 0N=S3 12=L4 12=B4 0N=S4		1=NextLine  SNORT!		2=NextLine , A mighty=RTag tiny=WTag , tiger? , She's , a , scaredy-cat! , I am , the , biggest 		3=NextLine and , I am , the , bravest , animal , in , the , whole=RTag pole=WTag , wide , world  		4=NextLine  Absolutely , no one , is , as brave as , me , and , nothing , scares , me!  
+[42, 43]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 10=L2 10=B2 0N=S2 11=L3 11=B3 0N=S3 12=L4 12=B4 0N=S4		1=NextLine  SNORT!		2=NextLine , A mighty , tiger=RTag raccoon=WTag , She's , a , scaredy-cat! , I am , the , biggest=RTag smallest=WTag		3=NextLine and , I am , the , bravest , animal , in , the , whole , wide , world  		4=NextLine  Absolutely , no one , is , as brave as , me , and , nothing , scares , me!  
 
 
 [44, 45]	1=LineNum 1=Skip 0=Read 1=L1 1=B1	0N=S1					1=NextLine  BOO!
-
 
 
 
@@ -79,7 +78,7 @@ It is surprising
 [58, 59]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 	1=NextLine  And , then , they , would , fly , home		2=NextLine  to , their , nest , in , the , sycamore , tree 		3=NextLine  and , she , would , sing , her , a , song
 
 
-[ 60, 61]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 	1=NextLine  And , the , little , bird , would , ask 	2=NextLine  When , I , fly , away , which , is , best			3=NextLine  North , South ,  East ,  or , West?
+[ 60, 61]	3=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 	1=NextLine  And , the , little , bird , would , ask 	2=NextLine  When , I fly , away , which , is , best			3=NextLine  North , South ,  East ,  or , West?
 
 
 [62, 63]	4=LineNum 0=Skip 1=Read 1=L1 1=B1 0N=S1 7=L2 7=B2 3N=S2 7=L3 7=B3 5N=S3 8=L4 8=B4 7N=S4		1=NextLine  Her , mother , curved , her , a , head , under , her , wing		2=NextLine  and , put , her , other , wing , over , her , little , birds		3=NextLine  As , the , hush , of , the , evening , fell			4=NextLine  the , crickets , sang , their , cricket , song
@@ -174,7 +173,7 @@ It is surprising
 [ 202, 203]		2=LineNum 0=Skip 1=Read	4=L1 	4=B1 0P=S1 6=L2 6=B2 2N=S2		1=NextLine  The penguin , looked , sad=RTag mad=WTag , and 		2=NextLine  the boy , thought , it , must , be , lost=RTag cost=WTag
 
 
-[204, 205]		4=LineNum 0=Skip 1=Read	 5=L1 	5=B1 10P=S1 3=L2 3=B2 8P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine  So , the boy , decided , to , help , the , penguin 		2=NextLine  find , its , way , home=RTag school=WTag 		3=NextLine  he , checked , in , the lost , and , found , office 		4=NextLine but , no one , was , missing=RTag seeing=WTag , a penguin
+[204, 205]		4=LineNum 0=Skip 1=Read	 5=L1 	5=B1 8P=S1 3=L2 3=B2 6P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine  So , the boy , decided , to , help , the , penguin 		2=NextLine  find , its , way , home=RTag school=WTag 		3=NextLine  he , checked , in , the lost , and , found , office 		4=NextLine but , no one , was , missing=RTag seeing=WTag , a penguin
 
 
 [ 206, 207]		4=LineNum 0=Skip 1=Read	 6=L1 	6=B1 10P=S1 3=L2 3=B2 8P=S2 4=L3 4=B3 8N=S3 4=L4 4=B4 10N=S4	1=NextLine  He , asked , some , birds , if , they , knew			2=NextLine  where=RTag when=WTag , the penguin , came from		3=NextLine  but , they , ignored=RTag snored=WTag , him		4=NextLine  some birds , are , like , that
@@ -194,16 +193,16 @@ It is surprising
 
 
 
-[216, 217]		5=LineNum 0=Skip 1=Read	9=L1 9=B1 9=L2 9=B2 8=L3 8=B3 6=L4 6=B4		1=NextLine   So  ,  together,  ,  he  ,  and  ,  the  ,  penguin  ,  would  ,  row		2=NextLine   to  ,  the  ,  south  ,  pole.  ,  The  ,  boy  ,  took  ,  his  ,  rowboat		3=NextLine   out of   the cupboard   and   they   tested   it   for 		4=NextLine   size   and   strength 			5=NextLine   They  ,  packed  ,  everything  ,  they  ,  would  ,  need
+[216, 217]		5=LineNum 0=Skip 1=Read	9=L1 9=B1 8P=S1 9=L2 9=B2 7P=S2 8=L3 8=B3 6P=S3 6=L4 6=B4 5P=S4 6=L5 6=B5 5N=S5		1=NextLine   So  ,  together,  ,  he  ,  and  ,  the  ,  penguin  ,  would  ,  row		2=NextLine   to  ,  the  ,  south  ,  pole.  ,  The  ,  boy  ,  took  ,  his  ,  rowboat		3=NextLine   out of   the cupboard   and   they   tested   it   for 		4=NextLine   size   and   strength 			5=NextLine   They  ,  packed  ,  everything  ,  they  ,  would  ,  need
 
 
-[218, 219]		2=LineNum 0=Skip 1=Read	4=L1 4=B1 5=L2 5=B2		1=NextLine   and  ,  together  ,  they  ,  pushed 		 2=NextLine   the  ,  rowboat  ,  out  ,  to  ,  sea	
+[ 218, 219]		2=LineNum 0=Skip 1=Read	4=L1 4=B1 1P=S1 5=L2 5=B2 1N=S2		1=NextLine   and  ,  together  ,  they  ,  pushed 		 2=NextLine   the  ,  rowboat  ,  out  ,  to  ,  sea	
 
 
 [220, 221]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		1=NextLine  They , rowed , south , for , many , days 
 
 
-[222, 223]		3=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine   and  ,  nights , with , the boy , telling , stories , all  		 2=NextLine   the  ,  way , the , penguin , listened , to , everything  	3=NextLine 	that , the , boy , said
+[ 222, 223]		3=LineNum 0=Skip 1=Read	 6=L1 	6=B1 0P=S1 4=L2 4=B2 2N=S2 6=L3 6=B3 4N=S3 		1=NextLine   and  ,  nights , with , the boy , telling , stories , all  		 2=NextLine   the way , the penguin , listened , to , everything  	3=NextLine 	that , the boy , said
 
 
 [224, 225]		2=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1	3=L2 	3=B2 0N=S2		1=NextLine  They , floated , through , good , weather , and , bad		2=NextLine  when , the , waves , were , as , big , as , mountains
@@ -212,7 +211,7 @@ It is surprising
 [226, 227]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		
 
 
-[228, 229]		4=LineNum	 5=L1 	5=B1 10P=S1 3=L2 3=B2 8P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine  until , they , came , to , the , south , pole 		2=NextLine  the boy , was , delighted  		3=NextLine  but , the penguin , said , nothing  		4=NextLine suddenly , it , looked , sad , again , as 		5=NextLine  the boy , helped , it , out ,  of , the boat 
+[ 228, 229]		4=LineNum	 5=L1 	5=B1 10P=S1 3=L2 3=B2 8P=S2 7=L3 7=B3 8N=S3 5=L4 5=B4 10N=S4	1=NextLine  until , they , came , to , the , south , pole 		2=NextLine  the boy , was , delighted  		3=NextLine  but , the penguin , said , nothing  		4=NextLine suddenly , it , looked , sad , again , as 		5=NextLine  the boy , helped , it , out ,  of , the boat 
 
 
 [230, 231]		1=LineNum 0=Skip 1=Read	 3=L1 	3=B1 0N=S1		1=NextLine  the boy , said , goodbye 
